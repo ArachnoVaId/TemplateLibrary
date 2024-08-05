@@ -1,0 +1,42 @@
+import Image from "next/image";
+
+export default function Hero1() {
+  return (
+    <section className="w-full min-h-screen p-8 flex flex-col justify-center items-center bg-gray-100 text-gray-800 relative ">
+      {/* Ornament background */}
+      <Image
+          src="/image/hero/hero1/bg_oval.png"
+          alt="Ornament Background"
+          width={10000}
+          height={10000}
+          className=" w-[65.156vw] h-[65.156vw] object-cover z-[0] absolute right-0"
+        />
+
+      <div className="w-[69.063vw] h-[27.813vw] flex z-[1] gap-y-[2vw]">
+        <div className="w-[31.146vw] h-[19.479vw] my-[4vw] ">
+          <h1 className="text-[2.604vw]/[3vw] font-bold">
+            Find Your Next Meal: The Best Restaurants in Town Await
+          </h1>
+          <h1 className="text-[0.938vw] text-[#2C2C2C]">
+            Find the perfect restaurant to satisfy your cravings and explore new
+            flavors. With options for every taste and budget, you're sure to
+            find something you'll love.
+          </h1>
+          <a
+            href=""
+            className="bg-[#4273CE] text-white font-semibold w-[6.667vw] h-[2.24vw] rounded-[0.521vw] text-[0.938vw] text-center flex items-center justify-center hover:bg-[#5AB0BB]/20 hover:scale-[102%] transition-all duration-700 ease-in-out"
+          >
+            Book Now
+          </a>
+        </div>
+        <Image
+          src="/image/hero/hero1/illustrations.png"
+          alt="Illustration"
+          width={2000}
+          height={2000}
+          className=" w-[37.656vw] h-[27.813vw] object-cover"
+        />
+      </div>
+    </section>
+  );
+}
