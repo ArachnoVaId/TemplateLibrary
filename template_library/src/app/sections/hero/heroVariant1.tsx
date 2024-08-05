@@ -9,12 +9,12 @@ export default function Hero1() {
           alt="Ornament Background"
           width={10000}
           height={10000}
-          className=" w-[65.156vw] h-[65.156vw] object-cover z-[0] absolute right-0"
+          className=" w-[65.156vw] h-[65.156vw] object-cover z-[0] absolute right-0 "
         />
 
       <div className="w-[69.063vw] h-[27.813vw] flex z-[1] gap-y-[2vw]">
         <div className="w-[31.146vw] h-[19.479vw] my-[4vw] ">
-          <h1 className="text-[2.604vw]/[3vw] font-bold">
+          <h1 className="text-[2.604vw]/[3vw] font-bold mb-[1vw]">
             Find Your Next Meal: The Best Restaurants in Town Await
           </h1>
           <h1 className="text-[0.938vw] text-[#2C2C2C]">
@@ -24,7 +24,7 @@ export default function Hero1() {
           </h1>
           <a
             href=""
-            className="bg-[#4273CE] text-white font-semibold w-[6.667vw] h-[2.24vw] rounded-[0.521vw] text-[0.938vw] text-center flex items-center justify-center hover:bg-[#5AB0BB]/20 hover:scale-[102%] transition-all duration-700 ease-in-out"
+            className="bg-[#4273CE] text-white font-semibold w-[6.667vw] h-[2.24vw] rounded-[0.521vw] text-[0.938vw] my-[1vw] text-center flex items-center justify-center hover:bg-[#5AB0BB]/20 hover:scale-[102%] transition-all duration-700 ease-in-out"
           >
             Book Now
           </a>
