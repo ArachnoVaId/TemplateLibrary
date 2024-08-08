@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Hero1() {
   return (
-    <section className="w-full min-h-screen p-8 flex flex-col justify-center items-center bg-gray-100 text-gray-800 relative ">
+    <section className="w-full aspect-[1920/1080] p-8 flex flex-col justify-center items-center bg-gray-100 text-gray-800 relative ">
       {/* Ornament background */}
       <Image
           src="/image/hero/hero1/bg_oval.png"
