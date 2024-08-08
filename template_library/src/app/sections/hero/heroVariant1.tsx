@@ -24,7 +24,7 @@ export default function Hero1() {
           </h1>
           <a
             href=""
-            className="bg-[#4273CE] text-white font-semibold w-[6.667vw] h-[2.24vw] rounded-[0.521vw] text-[0.938vw] my-[1vw] text-center flex items-center justify-center hover:bg-[#5AB0BB]/20 hover:scale-[102%] transition-all duration-700 ease-in-out"
+            className="bg-[#4273CE] text-white font-semibold w-[6.667vw] h-[2.24vw] rounded-[0.521vw] text-[0.938vw] my-[1vw] text-center flex items-center justify-center hover:bg-[#5AB0BB] hover:scale-[102%] transition-all duration-700 ease-in-out"
           >
             Book Now
           </a>
