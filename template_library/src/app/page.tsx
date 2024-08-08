@@ -6,7 +6,8 @@ import AboutUs3 from "./sections/aboutUs/aboutUsVariant3";
 export default function View() {
   return (
     <>
-       {/* <Hero1 /> */}
+       <Hero1 />
+       {/* <AboutUs2/> */}
        <AboutUs3/>
     </>
      
