@@ -13,8 +13,17 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      colors: {
+        "orange-brown": "rgba(175, 76, 36, 1)",
+      },
+      fontFamily: {
+        britannic: ['Britanic', 'sans-serif'],
+        bebasneue: ['Bebasneue', 'sans-serif'],
+        poppins: ['Poppins', 'sans-serif'],
+      },
     },
   },
   plugins: [],
 };
+
 export default config;

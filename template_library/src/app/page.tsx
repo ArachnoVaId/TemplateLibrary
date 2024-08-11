@@ -6,6 +6,7 @@ import AboutUs3 from "./sections/aboutUs/aboutUsVariant3";
 import Clients1 from "./sections/clients/clientsVariant1";
 import Clients2 from "./sections/clients/clientsVariant2";
 import Clients3 from "./sections/clients/clientsVariant3";
+import Hero3 from "./sections/hero/heroVariant3";
 import Cta1 from "./sections/cta/ctaVariant1";
 import Cta2 from "./sections/cta/ctaVariant2";
 import Cta3 from "./sections/cta/ctaVariant3";
@@ -17,6 +18,7 @@ import Location3 from "./sections/location/locationVariant3";
 export default function View() {
   return (
     <>
+
        <Hero1 />
        <AboutUs1/>
        <AboutUs2/>
