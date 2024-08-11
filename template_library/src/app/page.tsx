@@ -18,9 +18,9 @@ export default function View() {
   return (
     <>
        <Hero1 />
-       {/* <AboutUs1/>
+       <AboutUs1/>
        <AboutUs2/>
-       <AboutUs3/> */}
+       <AboutUs3/>
        {/* <Clients1/>
        <Clients2/>
        <Clients3/> */}
@@ -28,9 +28,9 @@ export default function View() {
        <Cta2/>
        <Cta3/>
        <Cta4/> */}
-       <Location1/>
+       {/* <Location1/>
        <Location2/>
-       <Location3/>
+       <Location3/> */}
     </>
      
 
