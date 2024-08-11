@@ -19,19 +19,65 @@ export default function Clients2() {
             </div>
             <div className="w-[40.729vw] h-[10.581vw] relative flex flex-col"> {/*boundary*/}
                 <h1 className="font-bold text-[2.083vw]">Our Client</h1>
-                <div className="flex flex-col justify-center items-start mt-1 space-y-5">
-                        <Image
-                            src="/image/clients/client4.png"
-                            alt="clients"
-                            width={10000}
-                            height={10000}
-                            className="w-[33.76vw] h-[2.248vw]"/>
-                        <Image
-                            src="/image/clients/client5.png"
-                            alt="clients"
-                            width={10000}
-                            height={10000}
-                            className="w-[33.76vw] h-[2.248vw]"/>
+                <div className="w-[33.76vw] h-[2.248vw] flex justify-start items-center mt-[1vw]">
+                    <Image
+                        src="/image/clients/reddit.png"
+                        alt="Ornament Background"
+                        width={10000}
+                        height={10000}
+                        className="w-[6.52vw] h-[3vw] mx-[0.5vw]"
+                    />
+                    <Image
+                        src="/image/clients/spotify.png"
+                        alt="Ornament Background"
+                        width={10000}
+                        height={10000}
+                        className="w-[6.823vw] h-[2.083vw] mx-[0.5vw]"
+                    />
+                    <Image
+                        src="/image/clients/google.png"
+                        alt="Ornament Background"
+                        width={10000}
+                        height={10000}
+                        className="w-[6.979vw] h-[2.188vw] mx-[0.5vw]"
+                    />
+                    <Image
+                        src="/image/clients/pinterest.png"
+                        alt="Ornament Background"
+                        width={10000}
+                        height={10000}
+                        className="w-[7.187vw] h-[1.771vw] mx-[0.5vw]"
+                    />
+                </div>
+                <div className="w-[33.76vw] h-[2.248vw] flex justify-start items-center mt-[1vw]">
+                <Image
+                        src="/image/clients/reddit.png"
+                        alt="Ornament Background"
+                        width={10000}
+                        height={10000}
+                        className="w-[6.52vw] h-[3vw] mx-[0.5vw]"
+                    />
+                    <Image
+                        src="/image/clients/spotify.png"
+                        alt="Ornament Background"
+                        width={10000}
+                        height={10000}
+                        className="w-[6.823vw] h-[2.083vw] mx-[0.5vw]"
+                    />
+                    <Image
+                        src="/image/clients/google.png"
+                        alt="Ornament Background"
+                        width={10000}
+                        height={10000}
+                        className="w-[6.979vw] h-[2.188vw] mx-[0.5vw]"
+                    />
+                    <Image
+                        src="/image/clients/pinterest.png"
+                        alt="Ornament Background"
+                        width={10000}
+                        height={10000}
+                        className="w-[7.187vw] h-[1.771vw] mx-[0.5vw]"
+                    />
                 </div>
             </div>
         </div>

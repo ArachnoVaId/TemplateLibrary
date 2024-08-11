@@ -6,13 +6,64 @@ export default function Clients1() {
       <div className="w-[52.135vw] h-[2.5vw]">
         <h1 className="text-[2.083vw] text-center font-bold">Our Client</h1>
       </div>
+      <div className="flex justify-center items-center">
       <Image
-        src="/image/clients/client1.png"
+        src="/image/clients/spotify.png"
         alt="Ornament Background"
         width={10000}
         height={10000}
-        className="w-full h-[5.208vw] mt-3"
+        className="w-[9.107vw] h-[2.734vw] mt-[2vw] mx-[0.5vw]"
       />
+      <Image
+        src="/image/clients/google.png"
+        alt="Ornament Background"
+        width={10000}
+        height={10000}
+        className="w-[9.107vw] h-[2.734vw] mt-[2vw] mx-[0.5vw]"
+      />
+      <Image
+        src="/image/clients/pinterest.png"
+        alt="Ornament Background"
+        width={10000}
+        height={10000}
+        className="w-[9.107vw] h-[2.229vw] mt-[2vw] mx-[0.5vw]"
+      />
+      <Image
+        src="/image/clients/stripe.png"
+        alt="Ornament Background"
+        width={10000}
+        height={10000}
+        className="w-[9.107vw] h-[4.341vw] mt-[2vw] mx-[0.5vw]"
+      />
+      <Image
+        src="/image/clients/reddit.png"
+        alt="Ornament Background"
+        width={10000}
+        height={10000}
+        className="w-[9.107vw] h-[4.25vw] mt-[2vw] mx-[0.5vw]"
+      />
+      <Image
+        src="/image/clients/spotify.png"
+        alt="Ornament Background"
+        width={10000}
+        height={10000}
+        className="w-[9.107vw] h-[2.734vw] mt-[2vw] mx-[0.5vw]"
+      />
+      <Image
+        src="/image/clients/google.png"
+        alt="Ornament Background"
+        width={10000}
+        height={10000}
+        className="w-[9.107vw] h-[2.734vw] mt-[2vw] mx-[0.5vw]"
+      />
+      <Image
+        src="/image/clients/pinterest.png"
+        alt="Ornament Background"
+        width={10000}
+        height={10000}
+        className="w-[9.107vw] h-[2.229vw] mt-[2vw] mx-[0.5vw]"
+      />
+      </div>
     </section>
   );
 }
