@@ -2,13 +2,41 @@ import Image from "next/image";
 
 const sources = [
   { src: "/image/clients/reddit.png", width: "w-[6.52vw]", height: "h-[3vw]" },
-  { src: "/image/clients/spotify.png", width: "w-[6.823vw]", height: "h-[2.083vw]" },
-  { src: "/image/clients/google.png", width: "w-[6.979vw]", height: "h-[2.188vw]" },
-  { src: "/image/clients/pinterest.png", width: "w-[7.187vw]", height: "h-[1.771vw]" },
-  { src: "/image/clients/stripe.png", width: "w-[9.107vw]", height: "h-[4.341vw]"},
-  { src: "/image/clients/google.png", width: "w-[6.979vw]", height: "h-[2.188vw]" },
-  { src: "/image/clients/pinterest.png", width: "w-[7.187vw]", height: "h-[1.771vw]" },
-  { src: "/image/clients/stripe.png", width: "w-[9.107vw]", height: "h-[4.341vw]"},
+  {
+    src: "/image/clients/spotify.png",
+    width: "w-[6.823vw]",
+    height: "h-[2.083vw]",
+  },
+  {
+    src: "/image/clients/google.png",
+    width: "w-[6.979vw]",
+    height: "h-[2.188vw]",
+  },
+  {
+    src: "/image/clients/pinterest.png",
+    width: "w-[7.187vw]",
+    height: "h-[1.771vw]",
+  },
+  {
+    src: "/image/clients/stripe.png",
+    width: "w-[9.107vw]",
+    height: "h-[4.341vw]",
+  },
+  {
+    src: "/image/clients/google.png",
+    width: "w-[6.979vw]",
+    height: "h-[2.188vw]",
+  },
+  {
+    src: "/image/clients/pinterest.png",
+    width: "w-[7.187vw]",
+    height: "h-[1.771vw]",
+  },
+  {
+    src: "/image/clients/stripe.png",
+    width: "w-[9.107vw]",
+    height: "h-[4.341vw]",
+  },
 ];
 
 export default function Clients1() {
@@ -20,7 +48,7 @@ export default function Clients1() {
       <div className="flex justify-center items-center">
         {sources.map((client, index) => (
           <Image
-            key = {index}
+            key={index}
             src={client.src}
             alt="Ornament Background"
             width={10000}
@@ -28,14 +56,14 @@ export default function Clients1() {
             className={`${client.width} ${client.height} mt-[1vw] mx-[1vw]`}
           />
         ))}
-      {/* <Image
+        {/* <Image
         src="/image/clients/spotify.png"
         alt="Ornament Background"
         width={10000}
         height={10000}
         className="w-[9.107vw] h-[2.734vw] mt-[2vw] mx-[0.5vw]"
       /> */}
-      {/* <Image
+        {/* <Image
         src="/image/clients/google.png"
         alt="Ornament Background"
         width={10000}

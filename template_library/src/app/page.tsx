@@ -10,6 +10,9 @@ import Cta1 from "./sections/cta/ctaVariant1";
 import Cta2 from "./sections/cta/ctaVariant2";
 import Cta3 from "./sections/cta/ctaVariant3";
 import Cta4 from "./sections/cta/ctaVariant4";
+import Location1 from "./sections/location/locationVariant1";
+import Location2 from "./sections/location/locationVariant2";
+import Location3 from "./sections/location/locationVariant3";
 
 export default function View() {
   return (
@@ -21,10 +24,13 @@ export default function View() {
        {/* <Clients1/>
        <Clients2/>
        <Clients3/> */}
-       <Cta1/>
+       {/* <Cta1/>
        <Cta2/>
        <Cta3/>
-       <Cta4/>
+       <Cta4/> */}
+       <Location1/>
+       <Location2/>
+       <Location3/>
     </>
      
 
