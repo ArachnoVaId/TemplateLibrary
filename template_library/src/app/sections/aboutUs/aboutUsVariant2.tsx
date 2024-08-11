@@ -13,14 +13,14 @@ export default function AboutUs2() {
             eget risus est ipsum morbi sit. Cursus tortor in <br/>
             et at viverra fermentum. 
           </p>
-          <p className="mt-1 text-[1.042vw]">
+          <p className="mt-[1vw] text-[1.042vw]">
             Orci tellus fames pharetra elit fermentum <br/>
             magna morbi donec. Pulvinar quis blandit <br/>
             sollicitudin ut lectus cursus. Ipsum luctus duis <br/>
             vitae venenatis. Amet.
           </p>
         </div>
-        <div className="ml-5">
+        <div className="ml-[3vw]">
           <Image
             src="/image/aboutUs/aboutUs2/fotoKopi.png"
             alt="Ornament Background"
