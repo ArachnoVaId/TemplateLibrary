@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-export default function Hero2() {
+export default function Hero3() {
   return (
     <section className="w-full aspect-[1920/1080] flex flex-col justify-center items-center bg-gray-100 relative">
       {/* Ornament background */}
