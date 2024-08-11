@@ -6,6 +6,10 @@ import AboutUs3 from "./sections/aboutUs/aboutUsVariant3";
 import Clients1 from "./sections/clients/clientsVariant1";
 import Clients2 from "./sections/clients/clientsVariant2";
 import Clients3 from "./sections/clients/clientsVariant3";
+import Cta1 from "./sections/cta/ctaVariant1";
+import Cta2 from "./sections/cta/ctaVariant2";
+import Cta3 from "./sections/cta/ctaVariant3";
+import Cta4 from "./sections/cta/ctaVariant4";
 
 export default function View() {
   return (
@@ -14,9 +18,13 @@ export default function View() {
        {/* <AboutUs1/>
        <AboutUs2/>
        <AboutUs3/> */}
-       <Clients1/>
+       {/* <Clients1/>
        <Clients2/>
-       <Clients3/>
+       <Clients3/> */}
+       <Cta1/>
+       <Cta2/>
+       <Cta3/>
+       <Cta4/>
     </>
      
 
