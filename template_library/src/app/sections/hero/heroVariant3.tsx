@@ -16,7 +16,7 @@ export default function Hero3() {
         <div className="w-full bg-white py-[0.41vw] px-[1.041vw] flex justify-between items-center rounded-full top-0">
           <div className="flex gap-x-[0.625vw] text-[1.45vw] font-bold">
             <Image
-              src="/image/hero/hero2/Union.png"
+              src="/image/hero/hero3/Union.png"
               alt="Background"
               height={10000}
               width={10000}
