@@ -14,12 +14,16 @@ import Cta4 from "./sections/cta/ctaVariant4";
 import Location1 from "./sections/location/locationVariant1";
 import Location2 from "./sections/location/locationVariant2";
 import Location3 from "./sections/location/locationVariant3";
+import Kelebihan1 from "./sections/kelebihan/kelebihanVariant1";
+import Kelebihan2 from "./sections/kelebihan/kelebihanVariant2";
+import Kelebihan3 from "./sections/kelebihan/kelebihanVariant3";
+import Kelebihan4 from "./sections/kelebihan/kelebihanVariant4";
 
 export default function View() {
   return (
     <>
 
-       <Hero1 />
+       {/* <Hero1 /> */}
        {/* <AboutUs1/>
        <AboutUs2/>
        <AboutUs3/> */}
@@ -30,9 +34,13 @@ export default function View() {
        <Cta2/>
        <Cta3/>
        <Cta4/> */}
-       <Location1/>
+       {/* <Location1/>
        <Location2/>
-       <Location3/>
+       <Location3/> */}
+       <Kelebihan1/>
+       <Kelebihan2/>
+       <Kelebihan3/>
+       <Kelebihan4/>
     </>
      
 
