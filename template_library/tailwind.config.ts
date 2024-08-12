@@ -20,6 +20,7 @@ const config: Config = {
         britannic: ['Britanic', 'sans-serif'],
         bebasneue: ['Bebasneue', 'sans-serif'],
         poppins: ['Poppins', 'sans-serif'],
+        roboto: ['Roboto', 'sans-serif'],
       },
     },
   },
