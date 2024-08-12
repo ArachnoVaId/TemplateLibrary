@@ -7,6 +7,7 @@ import Clients1 from "./sections/clients/clientsVariant1";
 import Clients2 from "./sections/clients/clientsVariant2";
 import Clients3 from "./sections/clients/clientsVariant3";
 import Hero3 from "./sections/hero/heroVariant3";
+import Hero4 from "./sections/hero/heroVariant4";
 import Cta1 from "./sections/cta/ctaVariant1";
 import Cta2 from "./sections/cta/ctaVariant2";
 import Cta3 from "./sections/cta/ctaVariant3";
@@ -24,6 +25,12 @@ export default function View() {
     <>
 
        {/* <Hero1 /> */}
+       <Hero4 />
+       {/* <AboutUs2/> */}
+       {/* <AboutUs3/> */}
+       {/* <Clients1/> */}
+       {/* <Clients2/> */}
+       {/* <Clients3/> */}
        {/* <AboutUs1/>
        <AboutUs2/>
        <AboutUs3/> */}
