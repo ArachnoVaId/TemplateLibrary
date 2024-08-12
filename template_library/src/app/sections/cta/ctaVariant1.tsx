@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function cta1() {
   return (
-    <section className="w-full min-h-[27.135vw] p-8 flex flex-col justify-center items-center bg-gray-100 text-gray-800 relative">
+    <section className="w-full min-h-[27.135vw] p-8 flex flex-col justify-center items-center bg-white text-gray-800 relative">
       <div className="w-[91.667vw] h-[14.635vw] flex flex-col items-center justify-center">
         <h1 className="w-[91.667vw] h-[3.229vw] text-[#565656] flex justify-center items-center text-[2.917vw] font-bold">
           Your team. Your projects.

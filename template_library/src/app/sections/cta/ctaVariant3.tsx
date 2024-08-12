@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function cta3() {
   return (
-    <section className="w-full min-h-[25.833vw] p-8 flex flex-col justify-center items-center bg-gray-100 text-gray-800 relative">
+    <section className="w-full min-h-[25.833vw] p-8 flex flex-col justify-center items-center bg-white text-gray-800 relative">
       <div className="w-[82.813vw] h-[19.583vw] bg-[#E5C4B9] rounded-[0.521vw]">
         <h1 className="text-center text-[3.11vw] mt-[0.5vw]">
           Connect with <span className="font-bold">Us</span>
