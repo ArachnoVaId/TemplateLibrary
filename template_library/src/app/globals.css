@@ -17,13 +17,13 @@
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
+  /* color: rgb(var(--foreground-rgb));
   background: linear-gradient(
       to bottom,
       transparent,
       rgb(var(--background-end-rgb))
     )
-    rgb(var(--background-start-rgb));
+    rgb(var(--background-start-rgb)); */
 }
 
 
@@ -48,6 +48,13 @@ body {
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Roboto';
+  src: url('/fonts/Roboto-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;
@@ -63,5 +70,9 @@ body {
 
   .font-Bebasneue {
     font-family: 'BebasNeue', sans-serif;
+  }
+
+  .font-Roboto {
+    font-family: 'Roboto', sans-serif;
   }
 }

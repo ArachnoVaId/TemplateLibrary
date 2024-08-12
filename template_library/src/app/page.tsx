@@ -27,15 +27,17 @@ import Kelebihan2 from "./sections/kelebihan/kelebihanVariant2";
 import Kelebihan3 from "./sections/kelebihan/kelebihanVariant3";
 import Kelebihan4 from "./sections/kelebihan/kelebihanVariant4";
 
+import Riview1 from "./sections/riview/riviewVariant1";
+
 export default function View() {
   return (
     <>
-       {/* <Hero1 /> */}
-       <Hero2 />
+       <Hero1 />
+       {/* <Hero2 /> */}
        {/* <Hero3 /> */}
        {/* <Hero4 /> */}
 
-       {/* <AboutUs1/>
+       {/* <AboutUs1/> */}
        {/* <AboutUs2/> */}
        {/* <AboutUs3/> */}
 
@@ -60,6 +62,9 @@ export default function View() {
        {/* <Kelebihan2/> */}
        {/* <Kelebihan3/> */}
        {/* <Kelebihan4/> */}
+
+       <Riview1 />
+
     </>
      
 
