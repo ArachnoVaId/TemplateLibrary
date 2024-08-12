@@ -28,6 +28,7 @@ import Kelebihan3 from "./sections/kelebihan/kelebihanVariant3";
 import Kelebihan4 from "./sections/kelebihan/kelebihanVariant4";
 
 import Riview1 from "./sections/riview/riviewVariant1";
+import Riview2 from "./sections/riview/riviewVariant2";
 
 export default function View() {
   return (
@@ -63,7 +64,8 @@ export default function View() {
        {/* <Kelebihan3/> */}
        {/* <Kelebihan4/> */}
 
-       <Riview1 />
+       {/* <Riview1 /> */}
+       <Riview2 />
 
     </>
      
