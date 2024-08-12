@@ -21,7 +21,7 @@ const sources = [
 
 export default function Clients2() {
   return (
-    <section className="w-full min-h-[22.04vw] p-8 flex flex-col justify-center items-center bg-gray-100 text-gray-800 relative">
+    <section className="w-full min-h-[22.04vw] p-8 flex flex-col justify-center items-center bg-white text-gray-800 relative">
       <div className="flex flex-row">
         <div className="w-[12.917vw] h-[10.469vw] mr-2 relative flex flex-col justify-between items-center">
           <div className="w-[12.917vw] h-[3.75vw]">

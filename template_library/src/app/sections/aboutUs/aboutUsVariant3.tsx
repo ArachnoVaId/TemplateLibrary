@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function AboutUs3() {
   return (
-    <section className="w-full min-h-[37.188vw] p-8 flex flex-col justify-center items-center bg-gray-100 text-gray-800 relative">
+    <section className="w-full min-h-[37.188vw] p-8 flex flex-col justify-center items-center bg-white text-gray-800 relative">
       <div className="w-[66.615vw] h-[25.208vw] flex justify-center items-center">
         <div className="w-[31.25vw] h-[24.167vw]"></div>
         <div className="w-[29.219vw] h-[14.219vw] ml-[4.5vw]">

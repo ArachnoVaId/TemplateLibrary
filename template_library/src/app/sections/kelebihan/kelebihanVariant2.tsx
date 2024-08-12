@@ -26,7 +26,7 @@ const sources = [
 
 export default function kelebihan2() {
   return (
-    <section className="w-full min-h-[15.417vw] p-8 flex flex-col justify-center items-center bg-gray-100 text-gray-800 relative">
+    <section className="w-full min-h-[15.417vw] p-8 flex flex-col justify-center items-center bg-white text-gray-800 relative">
         <div className="w-[57.552vw] h-[7.083vw] flex items-center justify-center">
             {sources.map((client, index) => (
                 <div className="w-full h-[7.083vw] flex flex-row">

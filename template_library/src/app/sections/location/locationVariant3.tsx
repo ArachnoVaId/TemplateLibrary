@@ -23,7 +23,7 @@ const sources = [
 
 export default function location3() {
   return (
-    <section className="w-full min-h-[34.583vw] p-8 flex flex-col justify-center items-center bg-gray-100 text-gray-800 relative">
+    <section className="w-full min-h-[34.583vw] p-8 flex flex-col justify-center items-center bg-white text-gray-800 relative">
       <div className="w-[51.927vw] h-[29.375vw] flex items-center justify-center bg-white rounded-[0.521vw]">
         <div className="w-[25.573vw] h-[28.333vw] bg-[#407BFF] rounded-[0.521vw] p-[2vw] z-0">
           {" "}

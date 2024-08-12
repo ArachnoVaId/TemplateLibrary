@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function AboutUs2() {
   return (
-    <section className="w-full min-h-[31.563vw] p-8 flex flex-col justify-center items-center bg-gray-100 text-gray-800 relative ">
+    <section className="w-full min-h-[31.563vw] p-8 flex flex-col justify-center items-center bg-white text-gray-800 relative ">
       <div className=" w-[65.729vw] h-[19.583vw] flex justify-center items-center">
         <div className="w-[23.385vw] h-[16.042vw]">
           <h1 className="font-bold text-[1.875vw] text-[#C77B2C]">About us</h1>

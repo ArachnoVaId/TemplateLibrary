@@ -55,7 +55,7 @@ const sources2 = [
 
 export default function Clients3() {
   return (
-    <section className="w-full min-h-[20.885vw] p-8 flex flex-col justify-center items-center bg-gray-100 text-gray-800 relative">
+    <section className="w-full min-h-[20.885vw] p-8 flex flex-col justify-center items-center bg-white text-gray-800 relative">
       <h1 className="w-[91.667vw] h-[2.292vw] text-center font-bold text-[2.083vw]">
         Our Top Partners
       </h1>

@@ -35,7 +35,7 @@ const sources = [
 
 export default function kelebihan4() {
   return (
-    <section className="w-full min-h-[30.781vw] p-8 flex flex-col justify-center items-center bg-gray-100 text-gray-800 relative">
+    <section className="w-full min-h-[30.781vw] p-8 flex flex-col justify-center items-center bg-white text-gray-800 relative">
       <div className="w-[87.604vw] h-[5.365vw] text-center">
         <h1 className="font-bold text-[2.917vw]">Kelebihan Kami</h1>
         <p className="text-[0.938vw]">

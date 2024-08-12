@@ -50,7 +50,7 @@ const sources2 = [
 
 export default function kelebihan1() {
   return (
-    <section className="w-full min-h-[42.344vw] p-8 flex flex-col justify-center items-center bg-gray-100 text-gray-800 relative">
+    <section className="w-full min-h-[42.344vw] p-8 flex flex-col justify-center items-center bg-white text-gray-800 relative">
       <div className="w-[87.5vw] h-[34.01vw] flex flex-col items-center justify-center">
         <div className="w-[52.135vw] h-[5.938vw] text-center">
           <h1 className="font-bold text-[2.083vw] text-[#4273CE]">

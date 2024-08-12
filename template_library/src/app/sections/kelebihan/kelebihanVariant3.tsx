@@ -33,7 +33,7 @@ const sources = [
 
 export default function kelebihan3() {
   return (
-    <section className="w-full min-h-[14.063vw] p-8 flex flex-col justify-center items-center bg-gray-100 text-gray-800 relative">
+    <section className="w-full min-h-[14.063vw] p-8 flex flex-col justify-center items-center bg-white text-gray-800 relative">
         <div className="w-[69.479vw] h-[3.646vw] flex items-center justify-center">
             {sources.map((client, index) => (
                 <div className="w-[17.552vw] h-[3.646vw] flex flex-row items-center justify-center">
