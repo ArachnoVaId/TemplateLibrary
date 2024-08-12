@@ -32,16 +32,16 @@ export default function location3() {
           <p className=" text-white text-[0.938vw] mt-[0.5vw]">
             Say Something!
           </p>
-          <div className="w-[17.552vw] h-[8.333vw] mt-[1.5vw]">
+          <div className="w-[17.552vw] h-[8.333vw] mt-[3vw]">
             {sources.map((client, index) => (
-              <div className="flex items-center">
+              <div className="flex items-center mt-[1.5vw]">
                 <Image
                   key={index}
                   src={client.src}
                   alt="Ornament Background"
                   width={10000}
                   height={10000}
-                  className={`${client.width} ${client.height} mt-[1.5vw] mr-[0.5vw] object-cover`}
+                  className={`${client.width} ${client.height} mr-[0.5vw] object-cover`}
                 />
                 <p className="text-white text-[0.833vw]">{client.text}</p>
               </div>
