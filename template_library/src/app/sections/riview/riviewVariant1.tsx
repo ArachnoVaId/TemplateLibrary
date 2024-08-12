@@ -43,7 +43,14 @@ const data = [
   },
 ];
 
-function Card({ desc, image_src, name, occupation }) {
+interface iCard{
+  desc: string;
+  image_src: string;
+  name: string;
+  occupation: string;
+}
+
+function Card({ desc, image_src, name, occupation }:iCard) {
   return (
     <div className="w-[21.4583vw] max-h-[38.229vw] font-roboto text-[0.9375vw] shadow-[0px_10px_15px_-3px_rgba(0,0,0,0.1)] p-[1.666vw] bg-white rounded-md">
       <p className="mb-[1vw]">{desc}</p>
@@ -106,7 +113,7 @@ export default function Riview1() {
       {/* title */}
 
       {/* content */}
-      <div className="ml-[4.166vw] mt-[4.6875vw]">
+      <div className="ml-[4.166vw] mt-[4.6875vw] pr-[2vw]">
         <Swiper
           ref={swiperRef}
           spaceBetween={50}
