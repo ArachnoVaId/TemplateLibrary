@@ -9,7 +9,7 @@ export default function Hero1() {
           alt="Ornament Background"
           width={10000}
           height={10000}
-          className=" w-[65.156vw] h-[65.156vw] object-cover z-[0] absolute right-0 "
+          className=" w-[65.156vw] h-[65.156vw] object-cover z-[0] absolute right-0"
         />
 
       <div className="w-[69.063vw] h-[27.813vw] flex z-[1] gap-y-[2vw]">

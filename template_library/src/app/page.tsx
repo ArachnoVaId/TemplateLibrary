@@ -6,12 +6,13 @@ import Clients1 from "./sections/clients/clientsVariant1";
 import Clients2 from "./sections/clients/clientsVariant2";
 import Clients3 from "./sections/clients/clientsVariant3";
 import Hero3 from "./sections/hero/heroVariant3";
+import Hero2 from "./sections/hero/heroVariant2";
 
 export default function View() {
   return (
     <>
        {/* <Hero1 /> */}
-       <Hero3 />
+       <Hero2 />
        {/* <AboutUs2/> */}
        {/* <AboutUs3/> */}
        {/* <Clients1/> */}
