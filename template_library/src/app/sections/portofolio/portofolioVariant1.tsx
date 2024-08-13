@@ -53,7 +53,7 @@ const sources = [
   },
 ];
 
-export default function location1() {
+export default function portofolio1() {
   return (
     <section className="w-full min-h-[34.688vw] p-8 flex flex-col justify-center items-center bg-white text-gray-800 relative">
       <div className="w-[91.667vw] h-[2.5vw] relative flex items-center">
@@ -64,7 +64,7 @@ export default function location1() {
           <h1 className=" text-[#407BFF] text-[0.833vw] font-bold mr-[0.5vw]">
             View All Portofolio
           </h1>
-          <a href="" className="w-[1.25vw] h-[1.25vw] text-[#407BFF]">
+          <a href="" className="w-[1.25vw] h-[1.25vw] text-[#407BFF] flex items-center justify-center">
             <FaArrowRight />
           </a>
         </div>
