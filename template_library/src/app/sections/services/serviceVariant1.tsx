@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { FaArrowRight } from "react-icons/fa";
 
 const sources = [
   {
@@ -30,7 +31,7 @@ const sources = [
   },
 ];
 
-export default function teams1() {
+export default function service1() {
   return (
     <section className="w-full min-h-[46.667vw] p-8 flex flex-col justify-center items-center bg-white text-gray-800 relative">
       <div className="w-[52.135vw] h-[6.927vw] flex flex-col items-center justify-center">
@@ -43,7 +44,7 @@ export default function teams1() {
       <div className="w-[60.938vw] h-[25.156vw] flex flex-row items-center justify-between mt-[3vw]">
         {sources.map((client, index) => (
           <div
-            className="w-[18.229vw] h-[25.156vw] flex flex-col items-center justify-center rounded-[0.521vw]"
+            className="w-[18.229vw] h-[25.156vw] flex flex-col items-center justify-center rounded-[0.521vw] relative"
             style={{ backgroundColor: client.background }}
           >
             <Image
@@ -52,14 +53,22 @@ export default function teams1() {
               alt="Ornament Background"
               width={10000}
               height={10000}
-              className={`${client.width} ${client.height}`}
+              className={`${client.width} ${client.height} absolute top-[3.5vw]`}
             />
-            <p className=" text-white font-bold text-[0.938vw] mt-[0.5vw]">
+            <p className="text-white font-bold text-[0.938vw]">
               {client.title}
             </p>
-            <p className="text-white text-[0.833vw] text-center mt-[0.5vw]">
+            <p className="w-[15.417vw] h-[4.531vw] text-white text-[0.833vw] text-center mt-[1.5vw] leading-[2vw]">
               {client.text1}
             </p>
+            <div className="absolute bottom-[2vw] flex flex-row items-center">
+          <h1 className=" text-white text-[0.885vw] font-bold mr-[0.5vw]">
+            Learn More
+          </h1>
+          <a href="" className="w-[0.625vw] h-[0.625vw] text-white flex items-center justify-center">
+            <FaArrowRight />
+          </a>
+        </div>
           </div>
         ))}
       </div>
