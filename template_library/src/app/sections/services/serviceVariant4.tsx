@@ -30,7 +30,7 @@ const sources = [
   },
 ];
 
-export default function teams1() {
+export default function service4() {
   return (
     <section className="w-full min-h-[46.667vw] p-8 flex flex-col justify-center items-center bg-white text-gray-800 relative">
       <div className="w-[52.135vw] h-[6.927vw] flex flex-col items-center justify-center">
