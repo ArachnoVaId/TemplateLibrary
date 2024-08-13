@@ -33,7 +33,7 @@ import Riview2 from "./sections/riview/riviewVariant2";
 export default function View() {
   return (
     <>
-       <Hero1 />
+       {/* <Hero1 /> */}
        {/* <Hero2 /> */}
        {/* <Hero3 /> */}
        {/* <Hero4 /> */}

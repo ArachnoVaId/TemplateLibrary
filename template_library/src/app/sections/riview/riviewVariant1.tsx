@@ -8,9 +8,18 @@ import {
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import { Navigation } from "swiper/modules";
+import { Swiper as SwiperType, SwiperRef } from "swiper/react";
 
-// Import Swiper styles
-const data = [
+// Define the type for the card data
+interface iCard {
+  desc: string;
+  image_src: string;
+  name: string;
+  occupation: string;
+}
+
+// Define the data array with explicit types
+const data: iCard[] = [
   {
     desc: "Lacus vestibulum ultricies mi risus, duis non, volutpat nullam non. Magna congue nisi maecenas elit aliquet eu sed consectetur. Vitae quis cras vitae praesent morbi adipiscing purus consectetur mi.",
     image_src: "/image/riview/riview1/reviewer1.png",
@@ -43,14 +52,8 @@ const data = [
   },
 ];
 
-interface iCard{
-  desc: string;
-  image_src: string;
-  name: string;
-  occupation: string;
-}
-
-function Card({ desc, image_src, name, occupation }:iCard) {
+// Card component with props typed using iCard
+function Card({ desc, image_src, name, occupation }: iCard) {
   return (
     <div className="w-[21.4583vw] max-h-[38.229vw] font-roboto text-[0.9375vw] shadow-[0px_10px_15px_-3px_rgba(0,0,0,0.1)] p-[1.666vw] bg-white rounded-md">
       <p className="mb-[1vw]">{desc}</p>
@@ -74,16 +77,16 @@ function Card({ desc, image_src, name, occupation }:iCard) {
 }
 
 export default function Riview1() {
-  const swiperRef = useRef(null);
+  const swiperRef = useRef<SwiperRef>(null);
 
   const handleNext = () => {
-    if (swiperRef.current) {
+    if (swiperRef.current && swiperRef.current.swiper) {
       swiperRef.current.swiper.slideNext();
     }
   };
 
   const handlePrev = () => {
-    if (swiperRef.current) {
+    if (swiperRef.current && swiperRef.current.swiper) {
       swiperRef.current.swiper.slidePrev();
     }
   };
@@ -124,18 +127,16 @@ export default function Riview1() {
             nextEl: '.swiper-button-next',
           }}
         >
-          {data.map((d, index) => {
-            return (
-              <SwiperSlide key={index}>
-                <Card
-                  desc={d.desc}
-                  image_src={d.image_src}
-                  name={d.name}
-                  occupation={d.occupation}
-                />
-              </SwiperSlide>
-            );
-          })}
+          {data.map((d, index) => (
+            <SwiperSlide key={index}>
+              <Card
+                desc={d.desc}
+                image_src={d.image_src}
+                name={d.name}
+                occupation={d.occupation}
+              />
+            </SwiperSlide>
+          ))}
         </Swiper>
       </div>
       {/* content */}
