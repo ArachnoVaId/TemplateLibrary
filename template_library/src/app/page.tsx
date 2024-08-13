@@ -29,10 +29,10 @@ import Kelebihan4 from "./sections/kelebihan/kelebihanVariant4";
 
 import Riview1 from "./sections/riview/riviewVariant1";
 import Riview2 from "./sections/riview/riviewVariant2";
+import Riview3 from "./sections/riview/riviewVariant3";
 
 import Portofolio1 from "./sections/portofolio/portofolioVariant1";
 import Portofolio2 from "./sections/portofolio/portofolioVariant2";
-import Riview3 from "./sections/riview/riviewVariant3";
 
 export default function View() {
   return (
@@ -46,10 +46,6 @@ export default function View() {
        {/* <AboutUs2/> */}
        {/* <AboutUs3/> */}
 
-       {/* <Clients1/> */}
-       {/* <Clients2/> */}
-       {/* <Clients3/> */}
-       
        {/* <Clients1/> */}
        {/* <Clients2/> */}
        {/* <Clients3/> */}
@@ -70,11 +66,10 @@ export default function View() {
 
        {/* <Riview1 /> */}
        {/* <Riview2 /> */}
-       <Riview3 />
+       {/* <Riview3 /> */}
 
        {/* <Portofolio1 /> */}
        {/* <Portofolio2 /> */}
-
     </>
      
 
