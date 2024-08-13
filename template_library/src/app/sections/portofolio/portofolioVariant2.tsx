@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { FaArrowRight } from "react-icons/fa";
+import { IoShareSocial } from "react-icons/io5";
 
 const sources1 = [
   {
@@ -81,12 +82,17 @@ export default function portofolio2() {
                 <button className="w-[10.521vw] h-[2.5vw] opacity-0 group-hover:opacity-100 text-red-500 bg-white px-[1vw] py-[0.5vw] mb-[0.5vw] transition-opacity duration-300">
                   Details
                 </button>
-                <a
-                  href="#"
-                  className="opacity-0 group-hover:opacity-100 text-white transition-opacity duration-300"
-                >
-                  Share
-                </a>
+                <div className="flex justify-center items-center">
+                  <a href="#" className="opacity-0 group-hover:opacity-100 text-white transition-opacity duration-300 mr-[0.3vw]">
+                    <IoShareSocial />
+                  </a> 
+                  <a
+                    href="#"
+                    className="opacity-0 group-hover:opacity-100 text-white transition-opacity duration-300"
+                  >
+                    Share
+                  </a>
+                </div>
               </div>
             </div>
           ))}
@@ -102,12 +108,17 @@ export default function portofolio2() {
                 <button className="w-[10.521vw] h-[2.5vw] opacity-0 group-hover:opacity-100 text-red-500 bg-white px-[1vw] py-[0.5vw] mb-[0.5vw] transition-opacity duration-300">
                   Details
                 </button>
-                <a
-                  href="#"
-                  className="opacity-0 group-hover:opacity-100 text-white transition-opacity duration-300"
-                >
-                  Share
-                </a>
+                <div className="flex justify-center items-center">
+                  <a href="#" className="opacity-0 group-hover:opacity-100 text-white transition-opacity duration-300 mr-[0.3vw]">
+                    <IoShareSocial />
+                  </a>
+                  <a
+                    href="#"
+                    className="opacity-0 group-hover:opacity-100 text-white transition-opacity duration-300"
+                  >
+                    Share
+                  </a>
+                </div>
               </div>
             </div>
           ))}
