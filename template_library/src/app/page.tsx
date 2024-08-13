@@ -32,6 +32,7 @@ import Riview2 from "./sections/riview/riviewVariant2";
 
 import Portofolio1 from "./sections/portofolio/portofolioVariant1";
 import Portofolio2 from "./sections/portofolio/portofolioVariant2";
+import Riview3 from "./sections/riview/riviewVariant3";
 
 export default function View() {
   return (
@@ -69,9 +70,10 @@ export default function View() {
 
        {/* <Riview1 /> */}
        {/* <Riview2 /> */}
+       <Riview3 />
 
-       <Portofolio1 />
-       <Portofolio2 />
+       {/* <Portofolio1 /> */}
+       {/* <Portofolio2 /> */}
 
     </>
      
