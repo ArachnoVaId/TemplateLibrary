@@ -64,6 +64,30 @@ const sources2 = [
   },
 ];
 
+function Overlay() {
+  return (
+    <div className="absolute inset-0 bg-gray-800 bg-opacity-0 group-hover:bg-opacity-50 flex flex-col justify-center items-center transition-opacity duration-300">
+      <button className="w-[10.521vw] h-[2.5vw] opacity-0 group-hover:opacity-100 text-red-500 bg-white px-[1vw] py-[0.5vw] mb-[0.5vw] transition-opacity duration-300">
+        Details
+      </button>
+      <div className="flex justify-center items-center">
+        <a
+          href="#"
+          className="opacity-0 group-hover:opacity-100 text-white transition-opacity duration-300 mr-[0.3vw]"
+        >
+          <IoShareSocial />
+        </a>
+        <a
+          href="#"
+          className="opacity-0 group-hover:opacity-100 text-white transition-opacity duration-300"
+        >
+          Share
+        </a>
+      </div>
+    </div>
+  );
+}
+
 export default function portofolio2() {
   return (
     <section className="w-full min-h-[65.625vw] p-8 flex flex-col justify-center items-center bg-white text-gray-800 relative">
@@ -78,22 +102,7 @@ export default function portofolio2() {
               className="relative group w-[14.844vw] h-[23.229vw] bg-cover bg-center"
               style={{ backgroundImage: `url(${client.src})` }}
             >
-              <div className="absolute inset-0 bg-gray-800 bg-opacity-0 group-hover:bg-opacity-50 flex flex-col justify-center items-center transition-opacity duration-300">
-                <button className="w-[10.521vw] h-[2.5vw] opacity-0 group-hover:opacity-100 text-red-500 bg-white px-[1vw] py-[0.5vw] mb-[0.5vw] transition-opacity duration-300">
-                  Details
-                </button>
-                <div className="flex justify-center items-center">
-                  <a href="#" className="opacity-0 group-hover:opacity-100 text-white transition-opacity duration-300 mr-[0.3vw]">
-                    <IoShareSocial />
-                  </a> 
-                  <a
-                    href="#"
-                    className="opacity-0 group-hover:opacity-100 text-white transition-opacity duration-300"
-                  >
-                    Share
-                  </a>
-                </div>
-              </div>
+              <Overlay/>
             </div>
           ))}
         </div>
@@ -104,22 +113,7 @@ export default function portofolio2() {
               className="relative group w-[14.844vw] h-[23.229vw] bg-cover bg-center"
               style={{ backgroundImage: `url(${client.src})` }}
             >
-              <div className="absolute inset-0 bg-gray-800 bg-opacity-0 group-hover:bg-opacity-50 flex flex-col justify-center items-center transition-opacity duration-300">
-                <button className="w-[10.521vw] h-[2.5vw] opacity-0 group-hover:opacity-100 text-red-500 bg-white px-[1vw] py-[0.5vw] mb-[0.5vw] transition-opacity duration-300">
-                  Details
-                </button>
-                <div className="flex justify-center items-center">
-                  <a href="#" className="opacity-0 group-hover:opacity-100 text-white transition-opacity duration-300 mr-[0.3vw]">
-                    <IoShareSocial />
-                  </a>
-                  <a
-                    href="#"
-                    className="opacity-0 group-hover:opacity-100 text-white transition-opacity duration-300"
-                  >
-                    Share
-                  </a>
-                </div>
-              </div>
+              <Overlay/>
             </div>
           ))}
         </div>
