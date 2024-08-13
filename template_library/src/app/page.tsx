@@ -34,6 +34,12 @@ import Riview3 from "./sections/riview/riviewVariant3";
 import Portofolio1 from "./sections/portofolio/portofolioVariant1";
 import Portofolio2 from "./sections/portofolio/portofolioVariant2";
 
+import Service1 from "./sections/services/serviceVariant1";
+import Service2 from "./sections/services/serviceVariant2";
+import Service3 from "./sections/services/serviceVariant3";
+import Service4 from "./sections/services/serviceVariant4";
+import Service5 from "./sections/services/serviceVariant5";
+
 export default function View() {
   return (
     <>
@@ -70,6 +76,8 @@ export default function View() {
 
        {/* <Portofolio1 /> */}
        {/* <Portofolio2 /> */}
+
+       <Service1/>
     </>
      
 
