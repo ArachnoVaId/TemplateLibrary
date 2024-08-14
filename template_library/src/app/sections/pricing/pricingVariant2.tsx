@@ -29,11 +29,11 @@ function Pricing2Card({ feature }: CardProps) {
                     <span className="text-[1.042vw] font-bold">{feature.price}</span>
                     {feature.price !== "Free" ? <p className="text-[0.729vw] text-gray-500">/month</p> : null}
                 </div>
-                <button className="bg-blue-600 text-white font-semibold py-2 px-4 rounded-lg w-full mb-4 text-[0.833vw]">
+                <button className="bg-blue-600 text-white font-semibold py-[0.417vw] px-[0.833vw] rounded-lg w-full mb-4 text-[0.833vw]">
                     Get started
                 </button>
                 <p className="text-[0.833vw] font-bold">{feature.price !== "What you get:" ? `All free ${feature.title}, plus:` : feature.price}</p>
-                <ul className="text-sm text-gray-500 space-y-2">
+                <ul className="text-sm text-gray-500 space-y-[0.729vw]">
                     {feature.features.map((item, index) => (
                         <li key={index} className="flex items-center text-[0.729vw]">
                             <span className="text-blue-600 mr-2">✔️</span> {item}
@@ -110,7 +110,8 @@ export default function Pricing2() {
                     <p className="text-[0.9vw] font-medium text-gray-900 dark:text-gray-300">Monthly</p>
                     <label className="inline-flex items-center cursor-pointer">
                         <input type="checkbox" value="" className="sr-only peer" />
-                        <div className="relative w-11 h-6 bg-gray-200 rounded-full peer peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600"></div>
+                        <div className="relative w-[2.864vw] h-[1.563vw] bg-gray-200 rounded-full peer peer-focus:ring-[0.208vw] peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[0.130vw] after:start-[0.10vw] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-[1.302vw] after:w-[1.302vw] after:transition-all dark:border-gray-600 peer-checked:bg-blue-600"></div>
+                        {/* <div className="relative w-[2.95vw] h-[1.74vw] bg-gray-200 rounded-full peer peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600"></div> */}
                     </label>
                     <p className="text-[0.9vw] font-medium text-gray-900 dark:text-gray-300">Yearly</p>
                 </div>

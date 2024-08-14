@@ -17,15 +17,15 @@ interface CardProps {
 function Pricing3Card({ feature }: CardProps) {
     return (
         <div className="w-[21.8125vw] bg-white rounded-lg shadow-md p-8">
-            <h2 className="text-[0.9375rem] font-bold text-[#6236FF] mb-2">{feature.title}</h2>
+            <h2 className="text-[0.9375vw] font-bold text-[#6236FF] mb-2">{feature.title}</h2>
             <div className="text-[#2B2F48]">
                 <div className="flex items-baseline space-x-1">
-                    {feature.price !== "Free" && <span className="text-[0.875rem]">Rp</span>}
-                    <span className="text-[2.8125rem] font-bold">{feature.price}</span>
+                    {feature.price !== "Free" && <span className="text-[0.875vw]">Rp</span>}
+                    <span className="text-[2.8125vw] font-bold">{feature.price}</span>
                 </div>
-                <p className="text-[0.875rem] text-gray-500">build {feature.time}</p>
+                <p className="text-[0.875vw] text-gray-500">build {feature.time}</p>
             </div>
-            <ul className="mt-6 mb-6 space-y-2 text-[0.875rem] text-[#2B2F48]">
+            <ul className="mt-6 mb-6 space-y-2 text-[0.875vw] text-[#2B2F48]">
                 {feature.features.map((item, index) => (
                     <li key={index} className="flex items-center gap-x-[0.3vw]">
                         {item.available ? (
