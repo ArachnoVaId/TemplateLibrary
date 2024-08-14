@@ -39,6 +39,10 @@ import Service2 from "./sections/services/serviceVariant2";
 import Service3 from "./sections/services/serviceVariant3";
 import Service4 from "./sections/services/serviceVariant4";
 import Service5 from "./sections/services/serviceVariant5";
+
+import Footer1 from "./sections/footer/footerVariant1";
+import Footer2 from "./sections/footer/footerVariant2";
+import Footer3 from "./sections/footer/footerVariant3";
 import Pricing1 from "./sections/pricing/pricingVariant1";
 import Pricing2 from "./sections/pricing/pricingVariant2";
 
@@ -79,7 +83,11 @@ export default function View() {
        {/* <Portofolio1 /> */}
        {/* <Portofolio2 /> */}
 
-       {/* <Service1/> */}
+       {/* {/* <Service1/> */}
+
+       <Footer1/>
+       <Footer2/>
+       <Footer3/> */}
 
        {/* <Pricing1 /> */}
        <Pricing2 />

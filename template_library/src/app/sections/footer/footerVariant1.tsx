@@ -54,6 +54,13 @@ export default function footer1() {
       >
         <div className="w-[77.604vw] h-[0.99vw] flex">
           <p className="text-[0.833vw] text-white">Copyright</p>
+          <Image
+            src="/image/footer/copyright.png"
+            width={10000}
+            height={10000}
+            alt="copyright"
+            className="w-[0.99vw] h-[0.99vw] mx-[0.2vw]"
+          />
           <p className="text-[0.833vw] text-white">
             2024 Arachnova. All rights reserved. Developed by Arachnova
           </p>
