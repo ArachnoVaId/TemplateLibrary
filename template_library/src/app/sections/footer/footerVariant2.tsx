@@ -109,7 +109,7 @@ export default function footer2() {
         className="w-full h-[2.656vw] absolute bottom-0 flex justify-center items-center"
         style={{ background: "#D8DFE7" }}
       >
-        <p className="text-[0.833vw] text-black">Copyright</p>
+        <p className="text-[0.833vw] text-black font-bold">Copyright</p>
         <Image
           src="/image/footer/copyrightBlack.png"
           width={10000}
@@ -117,7 +117,7 @@ export default function footer2() {
           alt="copyright"
           className="w-[0.99vw] h-[0.99vw] mx-[0.2vw]"
         />
-        <p className="text-[0.833vw] text-black">
+        <p className="text-[0.833vw] text-black font-bold">
           2024 Arachnova. All rights reserved. Developed by Arachnova
         </p>
       </div>
