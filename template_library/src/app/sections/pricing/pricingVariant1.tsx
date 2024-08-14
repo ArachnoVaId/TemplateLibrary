@@ -116,7 +116,7 @@ function CardPricing({ type, desc, fee, pages, usersPerPage, features }: CardCon
                         className="h-[4.166vw] border border-b-black w-full flex justify-center items-center"
                         key={featureKey}
                     >
-                        {features[featureKey] ? (
+                        {(features[featureKey as keyof typeof features]) ? (
                             <CiCircleCheck className="text-green-600 text-[2vw]" />
                         ) : (
                             <CiCircleRemove className="text-red-600 text-[2vw]" />
@@ -231,7 +231,7 @@ export default function Pricing1() {
             {/* title */}
 
             {/* content */}
-            <div className="flex justify-center gap-[2vw] mt-[2vw]">
+            <div className="flex justify-center mt-[2vw]">
                 <CardTitle feature={featureData} />
                 {plans.map((plan, index) => (
                     <CardPricing
