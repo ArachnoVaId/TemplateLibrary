@@ -32,7 +32,7 @@ function Pricing2Card({ feature }: CardProps) {
                 <button className="bg-blue-600 text-white font-semibold py-2 px-4 rounded-lg w-full mb-4 text-[0.833vw]">
                     Get started
                 </button>
-                <p>{feature.price !== "What you get:" ? `All free ${feature.title}, plus:` : feature.price}</p>
+                <p className="text-[0.833vw] font-bold">{feature.price !== "What you get:" ? `All free ${feature.title}, plus:` : feature.price}</p>
                 <ul className="text-sm text-gray-500 space-y-2">
                     {feature.features.map((item, index) => (
                         <li key={index} className="flex items-center text-[0.729vw]">
@@ -65,7 +65,6 @@ export default function Pricing2() {
             price: "500.000",
             isPopular: false,
             features: [
-                "All Free features, plus:",
                 "Kanban Boards",
                 "Gantt Charts",
                 "Resource Allocation",
@@ -107,6 +106,14 @@ export default function Pricing2() {
             <div className="text-center mb-8">
                 <p className="text-[1.667vw] font-bold">Streamline your teamwork. Start free</p>
                 <p className="text-[0.938vw]">Choose the perfect plan for your business needs</p>
+                <div className="flex gap-x-[1vw] justify-end items-center">
+                    <p className="text-[0.9vw] font-medium text-gray-900 dark:text-gray-300">Monthly</p>
+                    <label className="inline-flex items-center cursor-pointer">
+                        <input type="checkbox" value="" className="sr-only peer" />
+                        <div className="relative w-11 h-6 bg-gray-200 rounded-full peer peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600"></div>
+                    </label>
+                    <p className="text-[0.9vw] font-medium text-gray-900 dark:text-gray-300">Yearly</p>
+                </div>
             </div>
             {/* Plan Cards */}
             <div className="flex justify-center gap-x-[1.042vw]">
