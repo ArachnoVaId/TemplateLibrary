@@ -10,7 +10,7 @@ import "swiper/css";
 import { Navigation } from "swiper/modules";
 import { Swiper as SwiperType, SwiperRef } from "swiper/react";
 
-// Define the type for the card data
+
 interface iCard {
   desc: string;
   image_src: string;
@@ -18,7 +18,7 @@ interface iCard {
   occupation: string;
 }
 
-// Define the data array with explicit types
+
 const data: iCard[] = [
   {
     desc: "Lacus vestibulum ultricies mi risus, duis non, volutpat nullam non. Magna congue nisi maecenas elit aliquet eu sed consectetur. Vitae quis cras vitae praesent morbi adipiscing purus consectetur mi.",
@@ -52,7 +52,7 @@ const data: iCard[] = [
   },
 ];
 
-// Card component with props typed using iCard
+
 function Card({ desc, image_src, name, occupation }: iCard) {
   return (
     <div className="w-[21.4583vw] max-h-[38.229vw] font-roboto text-[0.9375vw] shadow-[0px_10px_15px_-3px_rgba(0,0,0,0.1)] p-[1.666vw] bg-white rounded-md">

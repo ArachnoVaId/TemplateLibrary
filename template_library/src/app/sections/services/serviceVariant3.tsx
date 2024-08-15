@@ -1,67 +1,140 @@
-import Image from "next/image";
+"use client";
+import { useRef } from "react";
+import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
+import { FaAccusoft } from "react-icons/fa";
+import { MdOutlineScreenshotMonitor } from "react-icons/md";
+import { MdOutlineAutoGraph } from "react-icons/md";
 
-const sources = [
-  {
-    src: "/image/teams/Avatar1.png",
-    width: "w-[4.167vw]",
-    height: "h-[4.167vw]",
-    title: "Content Writing",
-    text1:
-      "With lots of unique blocks, you can easily build a page without coding. Build your next landing page.",
-    background: "#F64B4B",
-  },
-  {
-    src: "/image/teams/Avatar2.png",
-    width: "w-[4.167vw]",
-    height: "h-[4.167vw]",
-    title: "Web Development",
-    text1:
-      "With lots of unique blocks, you can easily build a page without coding. Build your next landing page.",
-    background: "#473BF0",
-  },
-  {
-    src: "/image/teams/Avatar3.png",
-    width: "w-[4.167vw]",
-    height: "h-[4.167vw]",
-    title: "Graphic Design",
-    text1:
-      "With lots of unique blocks, you can easily build a page without coding. Build your next landing page.",
-    background: "#68D585",
-  },
-];
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/pagination";
+import { Navigation, Pagination } from "swiper/modules";
+import { Swiper as SwiperType, SwiperRef } from "swiper/react";
 
-export default function service3() {
+interface CardProps {
+  name: string;
+  detail: string;
+  icon: JSX.Element;
+}
+
+function ServiceCard({ name, detail, icon }: CardProps) {
   return (
-    <section className="w-full min-h-[46.667vw] p-8 flex flex-col justify-center items-center bg-white text-gray-800 relative">
-      <div className="w-[52.135vw] h-[6.927vw] flex flex-col items-center justify-center">
-        <h1 className="font-bold text-[1.25vw] text-[#4273CE]">Our Services</h1>
-        <h1 className="font-bold text-[1.875vw] text-[#161C2D] text-center">
-          We provide great services for <br />
-          our customers based on needs
-        </h1>
+    <div className="w-[19.427vw] h-[12.656vw] shadow-md py-[1.875vw] px-[2.135vw] rounded-lg mx-[1vw]">
+      <div className="flex items-center gap-x-[0.8vw]">
+        <div className="w-[2.5vw] h-[2.5vw] rounded-md flex items-center justify-center">
+          {icon}
+        </div>
+        <h1 className="text-[1.25vw] font-bold">{name}</h1>
       </div>
-      <div className="w-[60.938vw] h-[25.156vw] flex flex-row items-center justify-between mt-[3vw]">
-        {sources.map((client, index) => (
-          <div
-            className="w-[18.229vw] h-[25.156vw] flex flex-col items-center justify-center rounded-[0.521vw]"
-            style={{ backgroundColor: client.background }}
-          >
-            <Image
-              key={index}
-              src={client.src}
-              alt="Ornament Background"
-              width={10000}
-              height={10000}
-              className={`${client.width} ${client.height}`}
-            />
-            <p className=" text-white font-bold text-[0.938vw] mt-[0.5vw]">
-              {client.title}
-            </p>
-            <p className="text-white text-[0.833vw] text-center mt-[0.5vw]">
-              {client.text1}
-            </p>
-          </div>
-        ))}
+      <p className="my-[1vw] text-[0.833vw] text-[rgba(100,100,100,1)]">{detail}</p>
+      <a href="#" className="text-[0.938vw] text-blue-600 flex items-center gap-x-[1vw]">
+        <p className="font-bold">Learn More</p>
+        <FaChevronRight />
+      </a>
+    </div>
+  );
+}
+
+export default function Service3() {
+  const data: CardProps[] = [
+    {
+      name: "Interaction Design",
+      detail: "Lessons on design that cover the most recent developments.",
+      icon: <MdOutlineScreenshotMonitor className="text-[2.1vw]" />,
+    },
+    {
+      name: "Interaction Design",
+      detail: "Lessons on design that cover the most recent developments.",
+      icon: <MdOutlineScreenshotMonitor className="text-[2.1vw]" />,
+    },
+    {
+      name: "Interaction Design",
+      detail: "Lessons on design that cover the most recent developments.",
+      icon: <MdOutlineAutoGraph className="text-[2.1vw]" />,
+    },
+    {
+      name: "Interaction Design",
+      detail: "Lessons on design that cover the most recent developments.",
+      icon: <MdOutlineAutoGraph className="text-[2.1vw]" />,
+    },
+    {
+      name: "Interaction Design",
+      detail: "Lessons on design that cover the most recent developments.",
+      icon: <MdOutlineAutoGraph className="text-[2.1vw]" />,
+    },
+    {
+      name: "Interaction Design",
+      detail: "Lessons on design that cover the most recent developments.",
+      icon: <MdOutlineAutoGraph className="text-[2.1vw]" />,
+    },
+  ];
+
+  const swiperRef = useRef<SwiperRef>(null);
+
+  const handleNext = () => {
+    if (swiperRef.current && swiperRef.current.swiper) {
+      swiperRef.current.swiper.slideNext();
+    }
+  };
+
+  const handlePrev = () => {
+    if (swiperRef.current && swiperRef.current.swiper) {
+      swiperRef.current.swiper.slidePrev();
+    }
+  };
+
+  return (
+    <section className="w-full min-h-[46.667vw] p-8 flex flex-col items-center bg-white text-gray-800 relative">
+      {/* title */}
+      <div className="flex flex-col items-center justify-center">
+        <h1 className="font-bold text-[1.25vw] text-[#4273CE]">Our Services</h1>
+        <p className="font-bold mt-[1vw] w-[40vw] text-[1.875vw] text-[#161C2D] text-center">
+          Fostering a playful & engaging learning environment
+        </p>
+      </div>
+      {/* title */}
+
+      {/* content */}
+      <div className="w-[66.599vw] h-[12.656vw] mt-[3vw]">
+        <Swiper
+          ref={swiperRef}
+          spaceBetween={50}
+          slidesPerView={3}
+          modules={[Navigation, Pagination]}
+          pagination={{
+            clickable: true,
+            el: ".swiper-pagination-custom",
+          }}
+        >
+          {data.map((d, index) => (
+            <SwiperSlide key={index}>
+              <ServiceCard name={d.name} icon={d.icon} detail={d.detail} />
+            </SwiperSlide>
+          ))}
+        </Swiper>
+      </div>
+      {/* content */}
+
+      {/* Navigation + Pagination Container */}
+      <div className="flex items-center justify-center mt-[2vw]">
+        {/* Prev Button */}
+        <button
+          className="swiper-button-prev text-[1.5vw] mr-[1vw]"
+          onClick={handlePrev}
+        >
+          <FaChevronLeft className="text-[1vw]" />
+        </button>
+
+        {/* Custom pagination */}
+        <div className="swiper-pagination-custom text-center"></div>
+
+        {/* Next Button */}
+        <button
+          className="swiper-button-next text-[1.5vw] ml-[1vw]"
+          onClick={handleNext}
+        >
+          <FaChevronRight className="text-[1vw]" />
+        </button>
       </div>
     </section>
   );
