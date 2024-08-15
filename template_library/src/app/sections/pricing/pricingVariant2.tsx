@@ -101,7 +101,7 @@ export default function Pricing2() {
     ];
 
     return (
-        <div className="w-full p-8">
+        <div className="w-full p-8 aspect-[1920/1080]">
             {/* Title */}
             <div className="text-center mb-8">
                 <p className="text-[1.667vw] font-bold">Streamline your teamwork. Start free</p>
