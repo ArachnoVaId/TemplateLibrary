@@ -85,3 +85,13 @@ body {
     font-family: 'Roboto', sans-serif;
   }
 }
+
+.gradient-text {
+  font-size: 2rem; /* Adjust size as needed */
+  font-weight: bold; /* Optional */
+  background: linear-gradient(90deg, #2629D3 0%, #2193BC 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}

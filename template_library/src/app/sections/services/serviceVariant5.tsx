@@ -1,68 +1,94 @@
+"use client";
+import { useRef } from "react";
 import Image from "next/image";
+import { FaArrowRight, FaChevronRight, FaChevronLeft } from "react-icons/fa";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import { Navigation } from "swiper/modules";
+import { Swiper as SwiperType, SwiperRef } from "swiper/react";
 
-const sources = [
-  {
-    src: "/image/teams/Avatar1.png",
-    width: "w-[4.167vw]",
-    height: "h-[4.167vw]",
-    title: "Content Writing",
-    text1:
-      "With lots of unique blocks, you can easily build a page without coding. Build your next landing page.",
-    background: "#F64B4B",
-  },
-  {
-    src: "/image/teams/Avatar2.png",
-    width: "w-[4.167vw]",
-    height: "h-[4.167vw]",
-    title: "Web Development",
-    text1:
-      "With lots of unique blocks, you can easily build a page without coding. Build your next landing page.",
-    background: "#473BF0",
-  },
-  {
-    src: "/image/teams/Avatar3.png",
-    width: "w-[4.167vw]",
-    height: "h-[4.167vw]",
-    title: "Graphic Design",
-    text1:
-      "With lots of unique blocks, you can easily build a page without coding. Build your next landing page.",
-    background: "#68D585",
-  },
-];
+const data = [
+  { image_src: "/image/service/service5/service5.png", type: "Beauty", title: "Title Product", descriptiion: "Vehicula sit sit pharetra bibendum ut risus accumsan. Purus, in metus, enim, ipsum morbi euismod pellentesque. Mattis pharetra accumsan eget est mi enim, id. Sit quam tortor eu tellus non, in euismod integer." },
+  { image_src: "/image/service/service5/service5.png", type: "Beauty", title: "Title Product", descriptiion: "Vehicula sit sit pharetra bibendum ut risus accumsan. Purus, in metus, enim, ipsum morbi euismod pellentesque. Mattis pharetra accumsan eget est mi enim, id. Sit quam tortor eu tellus non, in euismod integer." },
+  { image_src: "/image/service/service5/service5.png", type: "Beauty", title: "Title Product", descriptiion: "Vehicula sit sit pharetra bibendum ut risus accumsan. Purus, in metus, enim, ipsum morbi euismod pellentesque. Mattis pharetra accumsan eget est mi enim, id. Sit quam tortor eu tellus non, in euismod integer." },
+  { image_src: "/image/service/service5/service5.png", type: "Beauty", title: "Title Product", descriptiion: "Vehicula sit sit pharetra bibendum ut risus accumsan. Purus, in metus, enim, ipsum morbi euismod pellentesque. Mattis pharetra accumsan eget est mi enim, id. Sit quam tortor eu tellus non, in euismod integer." },
+]
 
-export default function service5() {
+
+interface cardProps {
+  image_path: string;
+  type: string;
+  title: string;
+  description: string;
+}
+
+function CardService({ image_path, type, title, description }: cardProps) {
   return (
-    <section className="w-full min-h-[46.667vw] p-8 flex flex-col justify-center items-center bg-white text-gray-800 relative">
-      <div className="w-[52.135vw] h-[6.927vw] flex flex-col items-center justify-center">
-        <h1 className="font-bold text-[1.25vw] text-[#4273CE]">Our Services</h1>
-        <h1 className="font-bold text-[1.875vw] text-[#161C2D] text-center">
-          We provide great services for <br />
-          our customers based on needs
-        </h1>
+    <div className="w-[22.104vw] h-[31.688vw] p-[0.5vw] font-roboto shadow-lg rounded-xl m-[1vw]">
+      <Image alt="service image" src={image_path} width={10000} height={10000} className="w-[20.104vw] h-[11.458vw] mb-[1vw]" />
+      <p className="font-bold text-[0.833vw] mb-[0.5vw]">{type}</p>
+      <h1 className="font-bold text-[1.25vw] mb-[0.5vw]">{title}</h1>
+      <p className="text-[0.938vw] mb-[2vw]">{description}</p>
+      <button className="w-full flex items-center gap-x-[0.8vw] p-[1vw] text-[0.833vw] font-bold text-white bg-blue-500 rounded-md justify-center">
+        <p>Button Text</p>
+        <FaArrowRight />
+      </button>
+    </div>
+  )
+}
+
+export default function Service5() {
+  const swiperRef = useRef<SwiperRef>(null);
+  const handleNext = () => {
+    if (swiperRef.current && swiperRef.current.swiper) {
+      swiperRef.current.swiper.slideNext();
+    }
+  };
+
+  const handlePrev = () => {
+    if (swiperRef.current && swiperRef.current.swiper) {
+      swiperRef.current.swiper.slidePrev();
+    }
+  };
+  return (
+    <section className="bg-[rgba(246,248,247,1)] py-[3.125vw] flex flex-col justify-center items-center">
+      {/* title */}
+      <div className="mx-[4.166vw] text-center flex flex-col gap-y-[1vw]">
+        <h1 className="font-bold text-[2.917vw] gradient-text">Our Products</h1>
+        <p className="text-[1.0416vw] text-[rgba(71,85,105,1)] w-[46.875vw]">
+        Et pulvinar nec interdum integer id urna molestie porta nullam. A, donec ornare sed turpis pulvinar purus maecenas quam a. Erat porttitor pharetra sed in mauris elementum sollicitudin.
+        </p>
       </div>
-      <div className="w-[60.938vw] h-[25.156vw] flex flex-row items-center justify-between mt-[3vw]">
-        {sources.map((client, index) => (
-          <div
-            className="w-[18.229vw] h-[25.156vw] flex flex-col items-center justify-center rounded-[0.521vw]"
-            style={{ backgroundColor: client.background }}
+      {/* title */}
+
+      {/* content */}
+      <div className="ml-[4.166vw] mt-[2.6875vw] flex gap-x-[2vw] justify-between">
+        <button onClick={handlePrev}>
+          <FaChevronLeft className="text-[1.2vw]" />
+        </button>
+        <div className="w-[69.4791vw] flex gap-x-[0.9vw] p-[1vw]">
+          <Swiper
+            ref={swiperRef}
+            spaceBetween={10}
+            slidesPerView={3}
+            modules={[Navigation]}
+            navigation={{
+              prevEl: '.swiper-button-prev',
+              nextEl: '.swiper-button-next',
+            }}
           >
-            <Image
-              key={index}
-              src={client.src}
-              alt="Ornament Background"
-              width={10000}
-              height={10000}
-              className={`${client.width} ${client.height}`}
-            />
-            <p className=" text-white font-bold text-[0.938vw] mt-[0.5vw]">
-              {client.title}
-            </p>
-            <p className="text-white text-[0.833vw] text-center mt-[0.5vw]">
-              {client.text1}
-            </p>
-          </div>
-        ))}
+            {data.map((d, index) => (
+              <SwiperSlide key={index}>
+                <CardService type={d.type} title={d.title} description={d.descriptiion} image_path={d.image_src} />
+              </SwiperSlide>
+            ))}
+          </Swiper>
+        </div>
+        <button onClick={handleNext}>
+          <FaChevronRight className="text-[1.2vw]" />
+        </button>
       </div>
+      {/* content */}
     </section>
   );
 }
