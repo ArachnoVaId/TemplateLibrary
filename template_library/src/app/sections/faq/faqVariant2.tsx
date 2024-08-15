@@ -1,6 +1,7 @@
 "use client"
 import { useState } from "react";
-import { FaPlus, FaMinus } from "react-icons/fa";
+import { FaMinus } from "react-icons/fa";
+import { FaChevronDown } from "react-icons/fa6";
 
 interface FaqDropdownProps {
     question: string;
@@ -12,8 +13,8 @@ function FaqDropdownCard({ question, answer }: FaqDropdownProps) {
     return (
         <div className="w-[66.667vw] bg-[rgba(245,245,245,1)] p-[1vw] rounded-lg m-[0.8vw] shadow-md" onClick={() => setIsActive(!isActive)}>
             <div className={`font-bold text-[1.042vw] flex items-center justify-between ${isActive ? "mb-[1vw]" : "my-[0.5vw]"}`}>
-                <p>{question}</p>
-                {isActive ? <FaMinus className="text-[0.9vw] text-blue-700" /> : <FaPlus className="text-[0.9vw]" />}
+                <p className="text-[1.25vw]">{question}</p>
+                {isActive ? <FaMinus className="text-[0.9vw]" /> : <FaChevronDown className="text-[0.9vw] text-blue-700" />}
             </div>
             <p className={`h-[6.25vw] text-[0.828vw] text-[rgba(116,116,116,1)] ${isActive ? "flex" : "hidden"}`}>
                 {answer}
