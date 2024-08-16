@@ -45,6 +45,11 @@ import Footer2 from "./sections/footer/footerVariant2";
 import Footer3 from "./sections/footer/footerVariant3";
 import Pricing1 from "./sections/pricing/pricingVariant1";
 import Pricing2 from "./sections/pricing/pricingVariant2";
+import Pricing3 from "./sections/pricing/pricingVariant3";
+import Faq1 from "./sections/faq/faqVariant1";
+import Faq2 from "./sections/faq/faqVariant2";
+import Faq3 from "./sections/faq/faqVariant3";
+import Gallery1 from "./sections/gallery/gallery1/galleryVariant1";
 
 export default function View() {
   return (
@@ -83,14 +88,25 @@ export default function View() {
        {/* <Portofolio1 /> */}
        {/* <Portofolio2 /> */}
 
-       {/* {/* <Service1/> */}
+       {/* <Service1 /> */}
+       {/* <Service2 /> */}
+       {/* <Service3 /> */}
+       {/* <Service4 /> */}
+       {/* <Service5 /> */}
 
-       <Footer1/>
-       <Footer2/>
-       <Footer3/> */}
+       {/* <Footer1/> */}
+       {/* <Footer2/> */}
+       {/* <Footer3/> */}
 
        {/* <Pricing1 /> */}
-       <Pricing2 />
+       {/* <Pricing2 /> */}
+       {/* <Pricing3 /> */}
+
+       {/* <Faq1 /> */}
+       {/* <Faq2 /> */}
+       {/* <Faq3 /> */}
+
+       <Gallery1 />
     </>
      
 
