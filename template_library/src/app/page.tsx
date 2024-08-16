@@ -49,7 +49,8 @@ import Pricing3 from "./sections/pricing/pricingVariant3";
 import Faq1 from "./sections/faq/faqVariant1";
 import Faq2 from "./sections/faq/faqVariant2";
 import Faq3 from "./sections/faq/faqVariant3";
-import Gallery1 from "./sections/gallery/gallery1/galleryVariant1";
+import Gallery1 from "./sections/gallery/galleryVariant1";
+import Gallery2 from "./sections/gallery/galleryVariant2";
 
 export default function View() {
   return (
@@ -107,6 +108,7 @@ export default function View() {
        {/* <Faq3 /> */}
 
        <Gallery1 />
+       {/* <Gallery2 /> */}
     </>
      
 
