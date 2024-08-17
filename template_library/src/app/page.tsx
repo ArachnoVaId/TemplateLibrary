@@ -94,7 +94,7 @@ export default function View() {
        {/* <Service1 /> */}
        {/* <Service2 /> */}
        {/* <Service3 /> */}
-       {/* <Service4 /> */}
+       <Service4 />
        {/* <Service5 /> */}
 
        {/* <Footer1/> */}
@@ -111,7 +111,7 @@ export default function View() {
 
        {/* <Gallery1 /> */}
        {/* <Gallery2 /> */}
-       <Gallery3 />
+       {/* <Gallery3 /> */}
        {/* <Gallery4 /> */}
     </>
      

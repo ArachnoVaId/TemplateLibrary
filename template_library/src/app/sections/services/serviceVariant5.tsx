@@ -51,7 +51,7 @@ export default function Service5() {
     }
   };
   return (
-    <section className="bg-[rgba(246,248,247,1)] py-[3.125vw] flex flex-col justify-center items-center">
+    <section className="w-full aspect-[1920/1080] bg-[rgba(246,248,247,1)] py-[3.125vw] flex flex-col justify-center items-center">
       {/* title */}
       <div className="mx-[4.166vw] text-center flex flex-col gap-y-[1vw]">
         <h1 className="font-bold text-[2.917vw] gradient-text">Our Products</h1>
