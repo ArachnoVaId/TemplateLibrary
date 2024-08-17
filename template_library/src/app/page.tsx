@@ -51,6 +51,8 @@ import Faq2 from "./sections/faq/faqVariant2";
 import Faq3 from "./sections/faq/faqVariant3";
 import Gallery1 from "./sections/gallery/galleryVariant1";
 import Gallery2 from "./sections/gallery/galleryVariant2";
+import Gallery4 from "./sections/gallery/galleryVariant4";
+import Gallery3 from "./sections/gallery/galleryVariant3";
 
 export default function View() {
   return (
@@ -107,8 +109,10 @@ export default function View() {
        {/* <Faq2 /> */}
        {/* <Faq3 /> */}
 
-       <Gallery1 />
+       {/* <Gallery1 /> */}
        {/* <Gallery2 /> */}
+       <Gallery3 />
+       {/* <Gallery4 /> */}
     </>
      
 

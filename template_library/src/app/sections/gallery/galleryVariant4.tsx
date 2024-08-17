@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export default function Gallery4() {
   return (
-    <section className="bg-[rgba(246,248,247,1)] py-[2.125vw] flex flex-col justify-center items-center">
+    <section className="aspect-[1920/1080] bg-[rgba(246,248,247,1)] py-[2.125vw] flex flex-col justify-center items-center">
 
       {/* title */}
       <div className="mx-[4.166vw] text-center flex flex-col">
