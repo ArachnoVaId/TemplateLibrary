@@ -16,7 +16,7 @@ export default function Navbar2() {
                 width={10000}
                 className="w-[2vw] object-fill"
               />
-              <p>Arachnova</p>
+              <p className="text-[1.02vw]">Arachnova</p>
             </div>
             <a href="" className="font-bold text-[0.8vw]">Home</a>
             <a href="" className="font-bold text-[0.8vw]">About Us</a>

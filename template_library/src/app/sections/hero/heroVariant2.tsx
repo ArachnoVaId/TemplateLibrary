@@ -1,6 +1,10 @@
 import Image from "next/image";
 
-export default function Hero2() {
+interface heroprops {
+  navbar: JSX.Element
+}
+
+export default function Hero2({navbar}:heroprops) {
   return (
     <section className="w-full aspect-[1920/1080] flex flex-col justify-center items-center bg-gray-100 relative">
       {/* Ornament background */}
@@ -13,26 +17,7 @@ export default function Hero2() {
         />
       <div className="w-full h-[56.25vw] z-[1] gap-y-[5vw]">
         {/* navbar */}
-        <div className="w-full bg-white py-[0.653vw] px-[6.66vw] flex justify-between items-center top-0">
-          <div className="flex gap-x-[0.625vw] text-[1.45vw] font-bold">
-            <Image
-              src="/image/hero/hero3/Union.png"
-              alt="Background"
-              height={10000}
-              width={10000}
-              className="w-[2vw] object-fill"
-            />
-            <p>Arachnova</p>
-          </div>
-
-          <div className="flex gap-x-3 items-center text-[0.781vw]">
-            <a href="">Home</a>
-            <a href="">About Us</a>
-            <a href="">Pricing</a>
-            <a href="">Page</a>
-            <button className="p-2 bg-[rgba(39,93,144,1)] text-white ml-[0.8vw]">Contact Us</button>
-          </div>
-        </div>
+        {navbar}
         {/* navbar */}
 
         {/* content */}
