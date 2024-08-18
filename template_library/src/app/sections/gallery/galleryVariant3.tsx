@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function Gallery3() {
     return (
-        <section className="bg-[rgba(246,248,247,1)] py-[2.125vw] px-[8.177vw]">
+        <section className="bg-[rgba(246,248,247,1)] py-[2.125vw] px-[8.177vw] w-full aspect-[1920/1080]">
             <div className="bg-[rgba(246,248,247,1)] relative">
                 {/* title */}
                 <div className="w-[23.958vw] flex flex-col items-start gap-y-[1.2vw] absolute">
