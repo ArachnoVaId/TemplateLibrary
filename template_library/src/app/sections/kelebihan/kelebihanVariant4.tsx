@@ -45,9 +45,11 @@ export default function kelebihan4() {
       </div>
       <div className="w-[63.073vw] h-[15.417vw] mt-[2vw] flex flex-row items-center justify-evenly">
         {sources.map((client, index) => (
-          <div className="w-[11.406vw] h-[15.417vw] flex flex-col items-center justify-center rounded-[2.604vw] bg-[#4273CE] py-[1.667vw]">
+          <div
+            className="w-[11.406vw] h-[15.417vw] flex flex-col items-center justify-center rounded-[2.604vw] bg-[#4273CE] py-[1.667vw]"
+            key={index}
+          >
             <Image
-              key={index}
               src={client.src}
               alt="Ornament Background"
               width={10000}
@@ -55,7 +57,7 @@ export default function kelebihan4() {
               className={`${client.width} ${client.height} object-cover`}
             />
             <h1 className="text-white text-[1.25vw] font-bold mt-[0.5vw] text-center">
-                {client.title}
+              {client.title}
             </h1>
           </div>
         ))}

@@ -65,9 +65,11 @@ export default function kelebihan1() {
         <div className="w-full h-[25.052vw] mt-[3vw]">
           <div className="flex flex-row">
             {sources1.map((client, index) => (
-              <div className="w-[29.167vw] h-[12.552vw] flex flex-col items-center justify-center">
+              <div
+                className="w-[29.167vw] h-[12.552vw] flex flex-col items-center justify-center"
+                key={index}
+              >
                 <Image
-                  key={index}
                   src={client.src}
                   alt="Ornament Background"
                   width={10000}
@@ -85,9 +87,11 @@ export default function kelebihan1() {
           </div>
           <div className="flex flex-row items-center justify-center mt-[1vw]">
             {sources2.map((client, index) => (
-              <div className=" w-[29.167vw] h-[12.552vw] flex flex-col items-center justify-center">
+              <div
+                className=" w-[29.167vw] h-[12.552vw] flex flex-col items-center justify-center"
+                key={index}
+              >
                 <Image
-                  key={index}
                   src={client.src}
                   alt="Ornament Background"
                   width={10000}
