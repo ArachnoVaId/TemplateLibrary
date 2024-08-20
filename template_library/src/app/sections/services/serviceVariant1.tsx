@@ -46,9 +46,9 @@ export default function service1() {
           <div
             className="w-[18.229vw] h-[25.156vw] flex flex-col items-center justify-center rounded-[0.521vw] relative"
             style={{ backgroundColor: client.background }}
+            key={index}
           >
             <Image
-              key={index}
               src={client.src}
               alt="Ornament Background"
               width={10000}
@@ -61,14 +61,16 @@ export default function service1() {
             <p className="w-[15.417vw] h-[4.531vw] text-white text-[0.833vw] text-center mt-[1.5vw] leading-[2vw]">
               {client.text1}
             </p>
-            <div className="absolute bottom-[2vw] flex flex-row items-center">
-          <h1 className=" text-white text-[0.885vw] font-bold mr-[0.5vw]">
-            Learn More
-          </h1>
-          <a href="" className="w-[0.625vw] h-[0.625vw] text-white flex items-center justify-center">
-            <FaArrowRight />
-          </a>
-        </div>
+            <div className="absolute bottom-[2vw]">
+              <a href="" className="flex items-center justify-center">
+                <h1 className="text-white text-[0.885vw] font-bold mr-[0.5vw]">
+                  Learn More
+                </h1>
+                <div className="w-[0.625vw] h-[0.625vw] text-white">
+                  <FaArrowRight />
+                </div>
+              </a>
+            </div>
           </div>
         ))}
       </div>
