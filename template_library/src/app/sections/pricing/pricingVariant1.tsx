@@ -22,6 +22,7 @@ interface CardContent {
         customerSupport: boolean;
         analytics: boolean;
         accountManagement: boolean;
+        domain : boolean;
     };
 }
 
@@ -38,6 +39,7 @@ interface CardTitleProps {
         customerSupport: string;
         analytics: string;
         accountManagement: string;
+        domain: string;
     };
 }
 
@@ -153,6 +155,7 @@ export default function Pricing1() {
                 customerSupport: false,
                 analytics: false,
                 accountManagement: true,
+                domain: true
             },
         },
         {
@@ -177,6 +180,7 @@ export default function Pricing1() {
                 customerSupport: false,
                 analytics: false,
                 accountManagement: true,
+                domain: false,
             },
         },
         {
@@ -201,6 +205,7 @@ export default function Pricing1() {
                 customerSupport: true,
                 analytics: true,
                 accountManagement: true,
+                domain: false
             },
         },
     ];
@@ -217,6 +222,9 @@ export default function Pricing1() {
         customerSupport: "24/7 Customer Support",
         analytics: "Analytics Dashboard",
         accountManagement: "Account Management Tools",
+        domain: "Provided Domain "
+        
+
     };
 
     return (
