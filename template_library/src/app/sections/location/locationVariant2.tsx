@@ -37,9 +37,9 @@ export default function location1() {
             tristique.
           </p>
           {sources.map((client, index) => (
-            <div className="flex items-center mt-[1.5vw]">
+            <div className="flex items-center mt-[1.5vw]" key={index}>
               <Image
-                key={index}
+                
                 src={client.src}
                 alt="Ornament Background"
                 width={10000}

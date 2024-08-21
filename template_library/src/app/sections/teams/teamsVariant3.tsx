@@ -71,7 +71,7 @@ const sources2 = [
   },
 ];
 
-export default function teams1() {
+export default function teams3() {
   return (
     <section className="w-full min-h-[57.708vw] p-8 flex flex-col justify-center items-center bg-white text-gray-800 relative">
       <div className="w-[40vw] h-[8.333vw] flex flex-col items-center justify-center  ">

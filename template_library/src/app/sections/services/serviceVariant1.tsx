@@ -3,7 +3,7 @@ import { FaArrowRight } from "react-icons/fa";
 
 const sources = [
   {
-    src: "/image/teams/Avatar1.png",
+    src: "/image/service/merah.png",
     width: "w-[4.167vw]",
     height: "h-[4.167vw]",
     title: "Content Writing",
@@ -12,7 +12,7 @@ const sources = [
     background: "#F64B4B",
   },
   {
-    src: "/image/teams/Avatar2.png",
+    src: "/image/service/ijo.png",
     width: "w-[4.167vw]",
     height: "h-[4.167vw]",
     title: "Web Development",
@@ -21,7 +21,7 @@ const sources = [
     background: "#473BF0",
   },
   {
-    src: "/image/teams/Avatar3.png",
+    src: "/image/service/biru.png",
     width: "w-[4.167vw]",
     height: "h-[4.167vw]",
     title: "Graphic Design",
@@ -58,15 +58,15 @@ export default function service1() {
             <p className="text-white font-bold text-[0.938vw]">
               {client.title}
             </p>
-            <p className="w-[15.417vw] h-[4.531vw] text-white text-[0.833vw] text-center mt-[1.5vw] leading-[2vw]">
+            <p className="w-[15.417vw] h-[4.531vw] text-white text-[0.833vw] text-center mt-[1.5vw] leading-[1.5vw]">
               {client.text1}
             </p>
             <div className="absolute bottom-[2vw]">
-              <a href="" className="flex items-center justify-center">
-                <h1 className="text-white text-[0.885vw] font-bold mr-[0.5vw]">
+              <a href="" className="flex flex-row items-center">
+                <h1 className="text-white text-[0.885vw] font-bold mr-[1vw]">
                   Learn More
                 </h1>
-                <div className="w-[0.625vw] h-[0.625vw] text-white">
+                <div className="text-[0.625vw] text-white">
                   <FaArrowRight />
                 </div>
               </a>

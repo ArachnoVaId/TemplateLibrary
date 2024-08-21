@@ -65,10 +65,10 @@ import Navbar4 from "./sections/navbar/navbarVariant4";
 export default function View() {
   return (
     <>
-       <Hero1 navbar={<Navbar1 />} />
+       {/* <Hero1 navbar={<Navbar1 />} />
        <Hero2 navbar={<Navbar2 />} />
        <Hero3 navbar={<Navbar3 />} />
-       <Hero4 navbar={<Navbar4 />} />
+       <Hero4 navbar={<Navbar4 />} /> */}
 
        {/* <AboutUs1/>
        <AboutUs2/>
@@ -83,9 +83,9 @@ export default function View() {
        <Cta3/>
        <Cta4/> */}
        
-       {/* <Location1/>
+       <Location1/>
        <Location2/>
-       <Location3/> */}
+       <Location3/>
 
        {/* <Kelebihan1/>
        <Kelebihan2/>
