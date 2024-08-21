@@ -50,18 +50,26 @@ export default function teams1() {
         </div>
         <div className="w-[62.5vw] h-[15.833vw] flex flex-row items-center justify-between mt-[2vw]">
           {sources.map((client, index) => (
-            <div className="w-[14.375vw] h-[15.833vw] flex flex-col items-center bg-[#F9F9F9] rounded-[0.521vw] border-[0.052vw] border-[#D4D4D4] p-[1.25vw]">
+            <div
+              className="w-[14.375vw] h-[15.833vw] flex flex-col items-center bg-[#F9F9F9] rounded-[0.521vw] border-[0.052vw] border-[#D4D4D4] p-[1.25vw]"
+              key={index}
+            >
               <Image
-                key={index}
                 src={client.src}
                 alt="Ornament Background"
                 width={10000}
                 height={10000}
                 className={`${client.width} ${client.height} object-cover`}
               />
-              <p className="font-bold text-[0.938vw] mt-[0.5vw]">{client.title}</p>
-              <p className="text-[#407BFF] text-[0.833vw] text-center mt-[0.5vw]">{client.text1}</p>
-              <p className="text-[0.833vw] text-[#667085] text-center mt-[0.5vw]">{client.text2}</p>
+              <p className="font-bold text-[0.938vw] mt-[0.5vw]">
+                {client.title}
+              </p>
+              <p className="text-[#407BFF] text-[0.833vw] text-center mt-[0.5vw]">
+                {client.text1}
+              </p>
+              <p className="text-[0.833vw] text-[#667085] text-center mt-[0.5vw]">
+                {client.text2}
+              </p>
             </div>
           ))}
         </div>

@@ -85,9 +85,11 @@ export default function teams3() {
       <div className="w-[78.698vw] h-[33.75vw] flex flex-col mt-[2vw]">
         <div className="flex flex-row items-center justify-between">
           {sources1.map((client, index) => (
-            <div className="w-[17.578vw] h-[15.208vw] flex flex-col items-center bg-[#F9FAFB] p-[1.25vw]">
+            <div
+              className="w-[17.578vw] h-[15.208vw] flex flex-col items-center bg-[#F9FAFB] p-[1.25vw]"
+              key={index}
+            >
               <Image
-                key={index}
                 src={client.src}
                 alt="Ornament Background"
                 width={10000}

@@ -38,9 +38,11 @@ export default function teams2() {
       </div>
       <div className="w-[67.083vw] h-[17.917vw] flex flex-row justify-between mt-[2vw]">
         {sources.map((client, index) => (
-          <div className="relative w-[19.583vw] h-[17.917vw] flex flex-col items-center">
+          <div
+            className="relative w-[19.583vw] h-[17.917vw] flex flex-col items-center"
+            key={index}
+          >
             <Image
-              key={index}
               src={client.src}
               alt="Ornament Background"
               width={10000}
