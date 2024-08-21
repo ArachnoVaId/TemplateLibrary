@@ -101,6 +101,10 @@ export default function Service3() {
           spaceBetween={50}
           slidesPerView={3}
           modules={[Navigation, Pagination]}
+          navigation={{
+            prevEl: ".swiper-button-prev",
+            nextEl: ".swiper-button-next",
+          }}
           pagination={{
             clickable: true,
             el: ".swiper-pagination-custom",
@@ -119,7 +123,7 @@ export default function Service3() {
       <div className="flex items-center justify-center mt-[2vw]">
         {/* Prev Button */}
         <button
-          className="swiper-button-prev text-[1.5vw] mr-[1vw]"
+        className="mt-[0.2vw] mx-[0.9vw]"
           onClick={handlePrev}
         >
           <FaChevronLeft className="text-[1vw]" />
@@ -130,7 +134,7 @@ export default function Service3() {
 
         {/* Next Button */}
         <button
-          className="swiper-button-next text-[1.5vw] ml-[1vw]"
+        className="mt-[0.2vw] mx-[0.9vw]"
           onClick={handleNext}
         >
           <FaChevronRight className="text-[1vw]" />

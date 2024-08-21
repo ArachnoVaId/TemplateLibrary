@@ -66,8 +66,9 @@ export default function Service5() {
         <button onClick={handlePrev}>
           <FaChevronLeft className="text-[1.2vw]" />
         </button>
-        <div className="w-[69.4791vw] flex gap-x-[0.9vw] p-[1vw]">
+        <div className="flex gap-x-[0.9vw] p-[1vw]">
           <Swiper
+            className="w-[72.4791vw]"
             ref={swiperRef}
             spaceBetween={10}
             slidesPerView={3}
