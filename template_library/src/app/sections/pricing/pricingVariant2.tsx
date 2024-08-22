@@ -1,16 +1,26 @@
+"use client"
+
 import { IoSparklesSharp } from "react-icons/io5";
+import { useState } from "react";
+
+function formatNumberWithDots(number: number): string {
+    return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+}
 
 interface CardProps {
     feature: {
         title: string;
         subtitle: string;
-        price: string;
+        price: number;
         features: string[];
         isPopular?: boolean;
     };
+    isMonthly: boolean;
 }
 
-function Pricing2Card({ feature }: CardProps) {
+function Pricing2Card({ feature, isMonthly }: CardProps) {
+    const formattedPrice = feature.price > 0 ? formatNumberWithDots(isMonthly ? feature.price : feature.price*12) : feature.price < 0 ? "Custom" : "Free";
+
     return (
         <div className={"w-[16vw]"}>
             <div className={`text-white text-[0.729vw] h-[2vw] ${feature.isPopular ? "bg-blue-600" : ""} flex items-center rounded-t-lg justify-center gap-x-[0.5vw]`}>
@@ -25,14 +35,14 @@ function Pricing2Card({ feature }: CardProps) {
                 <h2 className="text-[1.042vw] font-semibold">{feature.title}</h2>
                 <p className="text-[0.729vw] text-gray-500 mb-[0.833vw]">{feature.subtitle}</p>
                 <div className="flex items-end mb-[0.833vw]">
-                    {feature.price !== "Free" ? <span className="text-[0.729vw]">Rp.</span> : null}
-                    <span className="text-[1.042vw] font-bold">{feature.price}</span>
-                    {feature.price !== "Free" ? <p className="text-[0.729vw] text-gray-500">/month</p> : null}
+                    {feature.price > 0 && <span className="text-[0.729vw]">Rp.</span>}
+                    <span className="text-[1.042vw] font-bold">{formattedPrice}</span>
+                    {feature.price > 0 && <p className="text-[0.729vw] text-gray-500">{isMonthly ? '/month' : '/year'}</p>}
                 </div>
                 <button className="bg-blue-600 text-white font-semibold py-[0.417vw] px-[0.833vw] rounded-lg w-full mb-4 text-[0.833vw]">
                     Get started
                 </button>
-                <p className="text-[0.833vw] font-bold mb-[1vw]">{feature.price !== "What you get:" ? `All free ${feature.title}, plus:` : feature.price}</p>
+                <p className="text-[0.833vw] font-bold mb-[1vw]">{`All free ${feature.title}, plus:`}</p>
                 <ul className="text-sm text-gray-500 space-y-[0.529vw] ">
                     {feature.features.map((item, index) => (
                         <li key={index} className="flex items-center text-[0.729vw]">
@@ -50,7 +60,7 @@ export default function Pricing2() {
         {
             title: "Free",
             subtitle: "Best for personal use",
-            price: "Free",
+            price: 0,
             isPopular: false,
             features: [
                 "Task Management",
@@ -63,7 +73,7 @@ export default function Pricing2() {
         {
             title: "Starter",
             subtitle: "Best for personal use",
-            price: "400.000",
+            price: 400000,
             isPopular: false,
             features: [
                 "Kanban Boards",
@@ -76,7 +86,7 @@ export default function Pricing2() {
         {
             title: "Business",
             subtitle: "Best for personal use",
-            price: "5.000.000",
+            price: 5000000,
             isPopular: true,
             features: [
                 "Customizable Workflows",
@@ -89,7 +99,7 @@ export default function Pricing2() {
         {
             title: "Enterprise",
             subtitle: "Best for personal use",
-            price: "Custom",
+            price: -1,
             isPopular: false,
             features: [
                 "SSO",
@@ -101,26 +111,29 @@ export default function Pricing2() {
         },
     ];
 
+    const [isMonthly, setIsMonthly] = useState(true);
+    console.log(isMonthly);
     return (
         <div className="w-full p-8 aspect-[1920/1080]">
             {/* Title */}
             <div className="text-center mb-8">
                 <p className="text-[1.667vw] font-bold">Streamline your teamwork. Start free</p>
                 <p className="text-[0.938vw]">Choose the perfect plan for your business needs</p>
+                {/* togle */}
                 <div className="flex gap-x-[1vw] justify-end items-center">
                     <p className="text-[0.9vw] font-medium text-gray-900 dark:text-gray-300">Monthly</p>
-                    <label className="inline-flex items-center cursor-pointer">
+                    <label className="inline-flex items-center cursor-pointer" onChange={() => setIsMonthly(!isMonthly)}>
                         <input type="checkbox" value="" className="sr-only peer" />
                         <div className="relative w-[2.864vw] h-[1.563vw] bg-gray-200 rounded-full peer peer-focus:ring-[0.208vw] peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[0.130vw] after:start-[0.10vw] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-[1.302vw] after:w-[1.302vw] after:transition-all dark:border-gray-600 peer-checked:bg-blue-600"></div>
-                        {/* <div className="relative w-[2.95vw] h-[1.74vw] bg-gray-200 rounded-full peer peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600"></div> */}
                     </label>
                     <p className="text-[0.9vw] font-medium text-gray-900 dark:text-gray-300">Yearly</p>
                 </div>
+                {/* togle */}
             </div>
             {/* Plan Cards */}
             <div className="flex justify-center gap-x-[1.042vw]">
                 {data.map((plan, index) => (
-                    <Pricing2Card key={index} feature={plan} />
+                    <Pricing2Card key={index} feature={plan} isMonthly={isMonthly} />
                 ))}
             </div>
         </div>
