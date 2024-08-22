@@ -22,7 +22,7 @@ export default function Hero3({navbar}:heroprops) {
         {/* navbar */}
 
         {/* content */}
-        <div className="w-full flex flex-col justify-center items-center text-white gap-y-[3.333vh]">
+        <div className="w-full flex flex-col justify-center items-center text-white gap-y-[3.333vh] pt-[9.469vw]">
           <div className="text-center flex flex-col items-center">
             <p className="text-[6.661vw] font-britannic">YOUR COZY CORNER</p>
             <p className="text-[3.125vw] font-bebasneue text-center">for Coffee & Conversation</p>
