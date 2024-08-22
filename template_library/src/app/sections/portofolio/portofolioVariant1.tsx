@@ -60,11 +60,14 @@ export default function portofolio1() {
         <h1 className="absolute left-0 text-[2.083vw] font-bold">
           Our Portofolio
         </h1>
-        <div className="absolute right-0 flex flex-row items-center">
-          <h1 className=" text-[#407BFF] text-[0.833vw] font-bold mr-[0.5vw]">
-            View All Portofolio
-          </h1>
-          <a href="" className="w-[1.25vw] h-[1.25vw] text-[#407BFF] flex items-center justify-center">
+        <div className="absolute right-0">
+          <a
+            href=""
+            className="w-[10.365vw] h-[2.5vw] text-[#407BFF] flex items-center justify-center"
+          >
+            <h1 className=" text-[#407BFF] text-[0.833vw] font-bold mr-[0.5vw]">
+              View All Portofolio
+            </h1>
             <FaArrowRight />
           </a>
         </div>
@@ -73,11 +76,12 @@ export default function portofolio1() {
         {sources.map((client, index) => (
           <div
             key={index}
-            className="w-[12.333vw] h-[18.438vw] bg-cover bg-center relative rounded-[0.07vw]"
+            className="w-[12.333vw] h-[18.438vw] bg-cover bg-center relative rounded-[0.07vw] group"
             style={{ backgroundImage: `url(${client.src})` }}
           >
-            <div className="absolute top-[1vw] left-[1vw] text-white">
-              <h2 className=" text-[0.833vw]">{client.text1}</h2>
+            <div className="absolute inset-0 bg-black opacity-0 rounded-[0.07vw] group-hover:opacity-50 transition-opacity duration-300"></div>
+            <div className="absolute top-[1vw] left-[1vw] text-white z-10">
+              <h2 className="text-[0.833vw]">{client.text1}</h2>
               <p className="font-bold text-[1.25vw]">{client.text2}</p>
             </div>
           </div>
