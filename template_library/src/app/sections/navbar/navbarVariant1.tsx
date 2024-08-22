@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Navbar1() {
   return (
-    <section className="w-full h-[4.375vw] flex flex-col justify-center items-center bg-transparent relative">
+    <section className="w-screen h-[4.375vw] flex flex-col justify-center items-center bg-transparent fixed z-[99]">
       {/* Ornament background */}
         {/* navbar */}
         <div className="w-[68.906vw] h-[2.188vw] flex justify-between items-center top-0">

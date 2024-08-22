@@ -5,7 +5,7 @@ interface heroprops{
   navbar: JSX.Element
 }
 
-export default function Hero3({navbar}:heroprops) {
+export default function Hero3() {
   return (
     <section className="w-full aspect-[1920/1080] flex flex-col justify-center items-center bg-gray-100 relative">
       {/* Ornament background */}
@@ -18,7 +18,7 @@ export default function Hero3({navbar}:heroprops) {
       />
       <div className="w-full h-[56.25vw] z-[1] gap-y-[5vw] p-[2.083vw]">
         {/* navbar */}
-        {navbar}
+        {/* {navbar} */}
         {/* navbar */}
 
         {/* content */}

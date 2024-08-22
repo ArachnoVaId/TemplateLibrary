@@ -4,7 +4,7 @@ interface heroprops {
   navbar: JSX.Element
 }
 
-export default function Hero4({navbar}:heroprops) {
+export default function Hero4() {
   return (
     <section className="w-full aspect-[1920/1080] flex flex-col justify-center items-center bg-white relative">
       {/* Ornament background */}
@@ -17,7 +17,7 @@ export default function Hero4({navbar}:heroprops) {
       />
       <div className="w-full h-[56.25vw] z-[1] gap-y-[5vw]">
         {/* navbar */}
-        {navbar}
+        {/* {navbar} */}
         {/* navbar */}
 
         {/* content */}

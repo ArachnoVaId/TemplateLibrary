@@ -95,10 +95,10 @@ export default function Service3() {
       {/* title */}
 
       {/* content */}
-      <div className="w-[66.599vw] h-[12.656vw] mt-[3vw]">
+      <div className="w-[72.599vw] h-[12.656vw] mt-[3vw]">
         <Swiper
           ref={swiperRef}
-          spaceBetween={50}
+          spaceBetween={10}
           slidesPerView={3}
           modules={[Navigation, Pagination]}
           navigation={{
@@ -111,7 +111,7 @@ export default function Service3() {
           }}
         >
           {data.map((d, index) => (
-            <SwiperSlide key={index} className="p-[1.2vw]">
+            <SwiperSlide key={index} className="p-[1.2vw] content-center">
               <ServiceCard name={d.name} icon={d.icon} detail={d.detail} />
             </SwiperSlide>
           ))}

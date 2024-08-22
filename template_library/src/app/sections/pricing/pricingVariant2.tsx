@@ -98,7 +98,7 @@ export default function Pricing2() {
       title: "Starter",
       subtitle: "Best for personal use",
       price: {
-        monthly: "400.000",
+        monthly: "490.000",
         annualy: "4.799.999",
       },
       isPopular: false,

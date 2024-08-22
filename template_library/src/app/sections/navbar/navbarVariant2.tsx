@@ -2,11 +2,11 @@ import Image from "next/image";
 
 export default function Navbar2() {
   return (
-    <section className="w-full h-[4.375vw] flex flex-col justify-center items-center bg-gray-100 relative">
+    <section className="w-full h-[4.375vw] flex flex-col justify-center items-center bg-gray-100 fixed z-[99]">
       {/* Ornament background */}
       <div className="w-full z-[1] gap-y-[5vw]">
         {/* navbar */}
-        <div className="w-full bg-white py-[0.42vw] px-[3.121vw] flex justify-between items-center top-0">
+        <div className="w-full bg-gray-100 py-[0.42vw] px-[3.121vw] flex justify-between items-center top-0">
           <div className="flex gap-x-[1.2vw] items-center">
             <div className="flex gap-x-[0.625vw] text-[1.45vw] font-bold mr-[1.2vw]">
               <Image
