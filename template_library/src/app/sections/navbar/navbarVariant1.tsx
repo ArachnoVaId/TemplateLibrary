@@ -2,10 +2,10 @@ import Image from "next/image";
 
 export default function Navbar1() {
   return (
-    <section className="w-full h-[4.375vw] flex flex-col justify-center items-center bg-white relative">
+    <section className="w-full h-[4.375vw] flex flex-col justify-center items-center bg-transparent relative">
       {/* Ornament background */}
         {/* navbar */}
-        <div className="w-[68.906vw] h-[2.188vw] bg-white flex justify-between items-center top-0">
+        <div className="w-[68.906vw] h-[2.188vw] flex justify-between items-center top-0">
           <div className="flex gap-x-[0.625vw]">
             <Image
               src="/image/hero/hero4/Union.png"

@@ -100,7 +100,6 @@ export default function Service3() {
           ref={swiperRef}
           spaceBetween={50}
           slidesPerView={3}
-          centeredSlides={true}
           modules={[Navigation, Pagination]}
           navigation={{
             prevEl: ".swiper-button-prev",

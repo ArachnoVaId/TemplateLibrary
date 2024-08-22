@@ -7,7 +7,7 @@ interface heroprops {
 
 export default function Hero1({navbar}:heroprops) {
   return (
-    <section className="w-full aspect-[1920/1080] flex flex-col items-center bg-gray-100 text-gray-800 relative">
+    <section className="w-full aspect-[1920/1080] flex flex-col items-center text-gray-800 relative">
       {/* Ornament background */}
       <Image
           src="/image/hero/hero1/bg_oval.png"
