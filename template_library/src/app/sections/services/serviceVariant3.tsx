@@ -19,7 +19,7 @@ interface CardProps {
 
 function ServiceCard({ name, detail, icon }: CardProps) {
   return (
-    <div className="w-[19.427vw] h-[12.656vw] shadow-md py-[1.875vw] px-[2.135vw] rounded-lg mx-[1vw]">
+    <div className="w-[19.427vw] h-[12.656vw] shadow-md py-[1.875vw] px-[2.135vw] rounded-lg">
       <div className="flex items-center gap-x-[0.8vw]">
         <div className="w-[2.5vw] h-[2.5vw] rounded-md flex items-center justify-center">
           {icon}
@@ -100,6 +100,7 @@ export default function Service3() {
           ref={swiperRef}
           spaceBetween={50}
           slidesPerView={3}
+          centeredSlides={true}
           modules={[Navigation, Pagination]}
           navigation={{
             prevEl: ".swiper-button-prev",
@@ -111,7 +112,7 @@ export default function Service3() {
           }}
         >
           {data.map((d, index) => (
-            <SwiperSlide key={index}>
+            <SwiperSlide key={index} className="p-[1.2vw]">
               <ServiceCard name={d.name} icon={d.icon} detail={d.detail} />
             </SwiperSlide>
           ))}
