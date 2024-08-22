@@ -12,7 +12,7 @@ interface CardProps {
 
 function Pricing2Card({ feature }: CardProps) {
     return (
-        <div className={"w-[15vw]"}>
+        <div className={"w-[16vw]"}>
             <div className={`text-white text-[0.729vw] h-[2vw] ${feature.isPopular ? "bg-blue-600" : ""} flex items-center rounded-t-lg justify-center gap-x-[0.5vw]`}>
                 {feature.isPopular && (
                     <div className="flex items-center rounded-t-lg justify-center gap-x-[0.5vw]">
@@ -32,8 +32,8 @@ function Pricing2Card({ feature }: CardProps) {
                 <button className="bg-blue-600 text-white font-semibold py-[0.417vw] px-[0.833vw] rounded-lg w-full mb-4 text-[0.833vw]">
                     Get started
                 </button>
-                <p className="text-[0.833vw] font-bold">{feature.price !== "What you get:" ? `All free ${feature.title}, plus:` : feature.price}</p>
-                <ul className="text-sm text-gray-500 space-y-[0.729vw]">
+                <p className="text-[0.833vw] font-bold mb-[1vw]">{feature.price !== "What you get:" ? `All free ${feature.title}, plus:` : feature.price}</p>
+                <ul className="text-sm text-gray-500 space-y-[0.529vw] ">
                     {feature.features.map((item, index) => (
                         <li key={index} className="flex items-center text-[0.729vw]">
                             <span className="text-blue-600 mr-2">✔️</span> {item}
@@ -57,12 +57,13 @@ export default function Pricing2() {
                 "Project Planning",
                 "Team Collaboration",
                 "Notifications and Reminders",
+                "what you get"
             ],
         },
         {
             title: "Starter",
             subtitle: "Best for personal use",
-            price: "500.000",
+            price: "400.000",
             isPopular: false,
             features: [
                 "Kanban Boards",
