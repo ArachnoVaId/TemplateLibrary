@@ -83,14 +83,14 @@ export default function View() {
        <Cta3/>
        <Cta4/> */}
        
-       <Location1/>
+       {/* <Location1/>
        <Location2/>
-       <Location3/>
+       <Location3/> */}
 
-       {/* <Kelebihan1/>
-       <Kelebihan2/>
-       <Kelebihan3/>
-       <Kelebihan4/> */}
+       <Kelebihan1/>
+       {/* <Kelebihan2/> */}
+       {/* <Kelebihan3/> */}
+       {/* <Kelebihan4/> */}
 
        {/* <Riview1 />
        <Riview2 />
