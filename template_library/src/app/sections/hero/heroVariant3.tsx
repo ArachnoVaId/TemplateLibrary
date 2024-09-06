@@ -7,7 +7,7 @@ interface heroprops{
 
 export default function Hero3() {
   return (
-    <section className="w-full md:aspect-[1920/1080] aspect-[430/1080] flex flex-col md:justify-center md:items-center md:bg-gray-100 relative bg-amber-950">
+    <section className="w-full md:aspect-[1920/1080] aspect-[430/1080] flex flex-col md:justify-center md:items-center md:bg-gray-100 relative">
       {/* Ornament background */}
       <Image
         src="/image/hero/hero3/bg.png"
@@ -17,11 +17,11 @@ export default function Hero3() {
         className="md:flex hidden w-[100vw] h-[56.25vw] object-cover z-[0] absolute"
       />
       <Image
-        src="/image/hero/hero3/bg.png"
+        src="/image/hero/hero3/bgMobile.png"
         alt="Background"
         height={10000}
         width={10000}
-        className="md:hidden flex w-[100vw] h-[56.25vw] object-cover z-[0] absolute"
+        className="md:hidden flex w-[100vw] h-[235.349vw] object-cover z-[0] absolute"
       />
       <div className="w-full h-[56.25vw] z-[1] gap-y-[5vw] md:p-[2.083vw]">
         
@@ -33,7 +33,7 @@ export default function Hero3() {
             <p className="md:text-[0.989vw] text-[2.614vw] md:w-[46.56vw] w-[70.93vw] text-center">Nullam odio lacus, dictum quis pretium congue, vehicula venenatis nunc. In hac habitasse platea dictumst. Phasellus vel velit vel augue maximus pharetra.</p>
           </div>
           <button className="bg-orange-brown py-2 px-4 rounded-full md:text-[0.833vw] text-[3.933vw] w-[55.909vw] md:w-fit">SEE OUR BEVERAGES</button>
-          <div className="flex md:flex-row flex-col md:items-center md:justify-center gap-x-[2.083vw] md:gap-y-0 gap-y-[3vw]">
+          <div className="flex md:flex-row flex-col md:items-center md:justify-center gap-x-[2.083vw] md:gap-y-0 gap-y-[5vw]">
             <div className="md:w-[15.625vw] w-[67.219vw] md:h-[7.916vw] h-[34.058vw] text-right md:space-y-[2vw] space-y-[3vw] bg-black/30 border-r-2 border-r-orange-brown rounded-md p-[0.625vw]">
               <p className="md:text-[1vw] text-[4.302vw] font-poppins">Our Location</p>
               <p className="md:text-[0.833vw] text-[3.586vw] font-poppins">Lorem ipsum dolor sit amet consectetur. Faucibus elit eget eget mauris auctor.</p>
