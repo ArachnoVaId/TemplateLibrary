@@ -65,64 +65,62 @@ import Navbar4 from "./sections/navbar/navbarVariant4";
 export default function View() {
   return (
     <>
-       {/* <Hero1 navbar={<Navbar1 />} />
+      {/* <Hero1 navbar={<Navbar1 />} />
        <Hero2 navbar={<Navbar2 />} />
        <Hero3 navbar={<Navbar3 />} />
        <Hero4 navbar={<Navbar4 />} /> */}
 
-       {/* <AboutUs1/>
-       <AboutUs2/>
-       <AboutUs3/> */}
+      <AboutUs1 />
+      <AboutUs2 />
+      <AboutUs3 />
 
-       {/* <Clients1/>
+      {/* <Clients1/>
        <Clients2/>
        <Clients3/> */}
-       
-       {/* <Cta1/>
-       <Cta2/>
-       <Cta3/>
-       <Cta4/> */}
-       
-       {/* <Location1/>
+
+      {/* <Cta1 />
+      <Cta2 />
+      <Cta3 />
+      <Cta4 /> */}
+
+      {/* <Location1/>
        <Location2/>
        <Location3/> */}
 
-       <Kelebihan1/>
-       {/* <Kelebihan2/> */}
-       {/* <Kelebihan3/> */}
-       {/* <Kelebihan4/> */}
+      {/* <Kelebihan1/> */}
+      {/* <Kelebihan2/> */}
+      {/* <Kelebihan3/> */}
+      {/* <Kelebihan4/> */}
 
-       {/* <Riview1 />
+      {/* <Riview1 />
        <Riview2 />
        <Riview3 /> */}
 
-       {/* <Portofolio1 />
+      {/* <Portofolio1 />
        <Portofolio2 /> */}
 
-       {/* <Service1 />
+      {/* <Service1 />
        <Service2 />
        <Service3 />
        <Service4 />
        <Service5 /> */}
 
-       {/* <Footer1/>
+      {/* <Footer1/>
        <Footer2/>
        <Footer3/> */}
 
-       {/* <Pricing1 />
+      {/* <Pricing1 />
        <Pricing2 />
        <Pricing3 /> */}
 
-       {/* <Faq1 />
+      {/* <Faq1 />
        <Faq2 />
        <Faq3 /> */}
 
-       {/* <Gallery1 />
+      {/* <Gallery1 />
        <Gallery2 />
        <Gallery3 />
        <Gallery4 /> */}
     </>
-     
-
   );
 }
