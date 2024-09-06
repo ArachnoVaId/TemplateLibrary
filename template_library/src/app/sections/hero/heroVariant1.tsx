@@ -16,7 +16,7 @@ export default function Hero1() {
           height={10000}
           className="w-[65.156vw] h-[65.156vw] object-cover z-[0] absolute top-[60vw] md:top-0 right-0"
         />
-      <div className="flex flex-col items-center h-[51.875vw] justify-center">
+      <div className="flex flex-col items-center h-[51.875vw] justify-center md:px-0 px-[5vw]">
         <div className="md:w-[69.063vw] w-full h-[27.813vw] flex flex-col md:flex-row md: z-[1] gap-y-[2vw] items-center md:items-start">
           <div className="md:w-[31.146vw] w-full md:h-[19.479vw] my-[4vw] px-[2vw]">
             <h1 className="md:text-[2.604vw]/[3vw] text-[8.123vw] font-bold mb-[1vw]  ">
