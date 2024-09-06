@@ -84,7 +84,7 @@ export default function Service3() {
   };
 
   return (
-    <section className="aspect-[430/1080] md:aspect-[1920/1080] w-full min-h-[46.667vw] md:px-[3vw] md:py-[3vw] px-[5vw] flex flex-col items-center bg-white text-gray-800 relative">
+    <section className="aspect-[430/1080] md:aspect-[1920/592] w-full min-h-[46.667vw] md:px-[3vw] md:py-[3vw] px-[5vw] flex flex-col items-center bg-white text-gray-800 relative">
       {/* title */}
       <div className="flex flex-col items-center justify-center md:my-0 my-[5vw]">
         <h1 className="font-bold text-[3.567vw] md:text-[1.25vw] text-[#4273CE]">Our Services</h1>
