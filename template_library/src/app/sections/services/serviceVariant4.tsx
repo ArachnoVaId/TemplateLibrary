@@ -22,23 +22,23 @@ function CardService({title, mainImageUrl, showImageUrl, productName, desciption
     <div>
       {/* card */}
         {/* title */}
-        <h2 className="text-[rgba(206,66,68,1)] font-bold text-[2.083vw]">
+        <h2 className="text-[rgba(206,66,68,1)] font-bold md:text-[2.083vw] text-[7.905vw]">
           {title}
         </h2>
         {/* title */}
 
         {/* content */}
-        <div className="flex gap-x-[1vw]">
+        <div className="flex flex-col md:flex-row gap-x-[1vw] md:justify-start justify-center items-center md:items-start">
           {/* images */}
-          <div className="flex gap-x-[0.5vw]">
+          <div className="flex flex-col md:flex-row gap-x-[0.5vw]">
             <Image
               src={mainImageUrl}
               alt="service"
               width={10000}
               height={10000}
-              className="w-[25vw] h-[25vw]"
+              className="md:w-[25vw] md:h-[25vw] w-[76.977vw] h-[76.977vw]"
             />
-            <div className="flex flex-col gap-y-[1vw]">
+            <div className="flex md:flex-col gap-y-[1vw] gap-x-[2vw] md:mt-0 mt-[2vw]">
               {showImageUrl.map((d, index) => (
                 <Image
                   key={index}
@@ -46,7 +46,7 @@ function CardService({title, mainImageUrl, showImageUrl, productName, desciption
                   alt="service"
                   width={10000}
                   height={10000}
-                  className="w-[9.844vw] h-[5.885vw]"
+                  className="md:w-[9.844vw] md:h-[5.885vw] w-[24.186vw] h-[14.419vw]"
                 />
               ))}
             </div>
@@ -54,13 +54,13 @@ function CardService({title, mainImageUrl, showImageUrl, productName, desciption
           {/* images */}
 
           {/* description */}
-          <div className="flex flex-col w-[43.906vw]">
-            <h2 className="text-[rgba(30,30,30,1)] font-bold text-[2.083vw]">
+          <div className="flex flex-col md:w-[43.906vw] w-full md:p-0 px-[1.5vw] md:mt-0 mt-[3vw]">
+            <h2 className="text-[rgba(30,30,30,1)] font-bold md:text-[2.083vw] text-[7.905vw]">
               {productName}
             </h2>
             <div className="flex flex-col gap-y-[3vw]">
               {desciption.map((d, index) => (
-                <p className="text-[1.042vw] text-[rgba(56,56,56,1)]" key={index}>{d}</p>
+                <p className="md:text-[1.042vw] text-[3.721vw] text-[rgba(56,56,56,1)]" key={index}>{d}</p>
               ))}
             </div>
           </div>
@@ -133,11 +133,11 @@ export default function Service4() {
   };
 
   return (
-    <section className="w-full aspect-[1920/1080] p-[3vw]">
-      <div>
-        <div className="bg-[rgba(255,237,223,1)] flex gap-x-[1vw] py-[2.125vw] px-[3.125vw] rounded-md">
-          <button onClick={handlePrev}>
-            <FaChevronLeft className="text-[1.2vw]" />
+    <section className="w-full aspect-[1920/1080] p-[3vw] relative">
+      <div className="bg-[rgba(255,237,223,1)] md:space-y-0 space-y-[5vw] md:pb-0 pb-[2vw] rounded-md">
+        <div className="flex gap-x-[1vw] py-[2.125vw] md:px-[3.125vw] px-[1vw]">
+          <button onClick={handlePrev} className="md:mt-0 mt-[32vw] md:mx-0 mx-[1vw]">
+            <FaChevronLeft className="md:text-[1.2vw] text-[4vw]" />
           </button>
           <Swiper
             ref={swiperRef}
@@ -151,6 +151,18 @@ export default function Service4() {
             pagination={{
               clickable: true,
             }}
+            breakpoints={{
+              640:{
+                pagination:{
+                  el: '.swiper-pagination-custom-serviceVariant4'
+                }
+              },
+              1024:{
+                pagination:{
+                  clickable: true,
+                }
+              },
+            }}
           >
             {data.map((d, index) => (
               <SwiperSlide key={index}>
@@ -163,17 +175,14 @@ export default function Service4() {
                 />
               </SwiperSlide>
             ))}
-            {/* <SwiperSlide>
-              <CardService />
-            </SwiperSlide>
-            <SwiperSlide>
-              <CardService />
-            </SwiperSlide> */}
+            <div className="h-[12vw] md:hidden flex"></div>
           </Swiper>
-          <button onClick={handleNext}>
-            <FaChevronRight className="text-[1.2vw]" />
+          <button onClick={handleNext} className="md:mt-0 mt-[32vw] md:mx-0 mx-[1vw]">
+            <FaChevronRight className="md:text-[1.2vw] text-[4vw]" />
           </button>
         </div>
+        {/* Custom pagination */}
+        <div className="swiper-pagination-custom-serviceVariant4 text-center"></div>
       </div>
     </section>
   );
