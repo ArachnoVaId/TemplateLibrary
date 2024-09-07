@@ -10,12 +10,12 @@ interface FaqDropdownProps {
 function FaqDropdownCard({ question, answer }: FaqDropdownProps) {
     const [isActive, setIsActive] = useState(false);
     return (
-        <div className="w-[41.25vw] bg-[rgba(245,245,245,1)] p-[1vw] rounded-lg m-[0.8vw]" onClick={() => setIsActive(!isActive)}>
-            <div className={`font-bold text-[0.813vw] flex items-center justify-between ${isActive ? "mb-[1vw]" : "my-[0.5vw]"}`}>
-                <p className="text-[1.25vw]">{question}</p>
-                {isActive ? <FaMinus className="text-[0.8vw]" /> : <FaPlus className="text-[0.8vw]" />}
+        <div className="md:w-[41.25vw] w-[91.358vw] bg-[rgba(245,245,245,1)] md:p-[1vw] p-[3vw] rounded-lg m-[0.8vw]" onClick={() => setIsActive(!isActive)}>
+            <div className={`font-bold md:text-[0.813vw] text-[2.609vw] flex items-center justify-between ${isActive ? "mb-[1vw]" : "my-[0.5vw]"}`}>
+                <p className="md:text-[1.25vw] text-[2.609vw]">{question}</p>
+                {isActive ? <FaMinus className="md:text-[0.8vw] text-[2vw]" /> : <FaPlus className="md:text-[0.8vw] text-[2vw]" />}
             </div>
-            <p className={`h-[6.25vw] text-[0.828vw] text-[rgba(116,116,116,1)] ${isActive ? "flex" : "hidden"}`}>
+            <p className={`md:h-[6.25vw] h-[24.186vw] md:text-[0.828vw] text-[2.658vw] text-[rgba(116,116,116,1)] ${isActive ? "flex" : "hidden"}`}>
                 {answer}
             </p>
         </div>
@@ -71,9 +71,9 @@ export default function Faq1() {
         },
     ]
     return (
-        <section className="w-full aspect-[1920/1080] p-8">
+        <section className="w-full md:aspect-[1920/1080] aspect-[430/859] p-[3vw]">
             {/* title */}
-            <h1 className="font-bold text-[1.964vw] text-center my-[1.2vw]">Frequently Asked Questions</h1>
+            <h1 className="font-bold md:text-[1.964vw] text-[6.033vw] text-center my-[1.2vw]">Frequently Asked Questions</h1>
             {/* title */}
 
             {/* content */}
