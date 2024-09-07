@@ -26,12 +26,12 @@ interface CardProps {
 
 function Card({ image_src, image_alt, name, quote, occupation }: CardProps) {
     return (
-        <div className="w-[18.2291vw] h-[18.9583vw] p-[1.5625vw] bg-white rounded-md flex flex-col justify-evenly">
-            <Image src={image_src} alt={image_alt} width={100} height={100} className="w-[2.8125vw] h-[2.8125vw]" />
-            <h1 className="text-[1.09375vw]">{quote}</h1>
-            <div>
-                <p className="text-[0.8854vw] font-bold">{name}</p>
-                <p className="text-[0.8854vw] text-[rgba(22,28,45,1)]">{occupation}</p>
+        <div className="md:w-[18.2291vw] md:h-[18.9583vw] md:p-[1.5625vw] p-[5.5vw] w-[76.279vw] h-[78.372vw] bg-white rounded-md flex flex-col justify-evenly">
+            <Image src={image_src} alt={image_alt} width={100} height={100} className="md:w-[2.8125vw] md:h-[2.8125vw] w-[11.628vw] h-[11.628vw]" />
+            <h1 className="md:text-[1.09375vw] text-[4.533vw]">{quote}</h1>
+            <div className="md:text-[0.8854vw] text-[3.67vw]">
+                <p className="font-bold">{name}</p>
+                <p className="text-[rgba(22,28,45,1)]">{occupation}</p>
             </div>
         </div>
     );
@@ -39,11 +39,11 @@ function Card({ image_src, image_alt, name, quote, occupation }: CardProps) {
 
 export default function Riview3() {
     return (
-        <section className="bg-[rgba(246,248,247,1)] py-[3.125vw] flex flex-col justify-center items-center">
+        <section className="md:aspect-[1920/1080] aspect-[430/1080] bg-[rgba(246,248,247,1)] py-[3.125vw] flex flex-col justify-center items-center">
             {/* title */}
-            <div className="mx-[4.166vw] text-center flex flex-col gap-y-[0.6vw] w-[40.05vw]">
-                <h1 className="text-[1.875vw] font-bold">What people say about us</h1>
-                <p className="text-[0.9895vw] text-[rgba(22,28,45,1)]">
+            <div className="md:mx-[4.166vw] mx-[2vw] text-center flex flex-col gap-y-[0.6vw] md:w-[40.05vw]">
+                <h1 className="md:text-[1.875vw] text-[7.056vw] font-bold">What people say about us</h1>
+                <p className="md:text-[0.9895vw] text-[16.01px] text-[rgba(22,28,45,1)]">
                     Lorem ipsum dolor sit amet consectetur. Donec erat condimentum porta
                     cras maecenas facilisis.
                 </p>
@@ -51,8 +51,8 @@ export default function Riview3() {
             {/* title */}
 
             {/* content */}
-            <div className="ml-[4.166vw] mt-[4.6875vw] flex gap-x-[2vw] justify-start overflow-x-auto w-[60.9375vw] scrollbar-hide">
-                <div className="flex gap-x-[0.9vw]">
+            <div className="ml-[4.166vw] mt-[4.6875vw] flex gap-x-[2vw] justify-start md:overflow-x-auto md:w-[60.9375vw] md:scrollbar-hide">
+                <div className="flex flex-col gap-y-[2vw] md:flex-row md:gap-x-[0.9vw]">
                     {data.map((item, index) => (
                         <Card
                             key={index}

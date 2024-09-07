@@ -19,15 +19,15 @@ interface CardProps {
 
 function ServiceCard({ name, detail, icon }: CardProps) {
   return (
-    <div className="w-[19.427vw] h-[12.656vw] shadow-md py-[1.875vw] px-[2.135vw] rounded-lg">
-      <div className="flex items-center gap-x-[0.8vw]">
-        <div className="w-[2.5vw] h-[2.5vw] rounded-md flex items-center justify-center">
+    <div className="md:w-[19.427vw] h-[42.558vw] w-[71.628vw] md:h-[12.656vw] shadow-md md:py-[1.875vw] md:px-[2.135vw] p-[5vw] rounded-lg md:space-y-0 space-y-[3vw] md:my-0 my-[2vw]">
+      <div className="flex items-center md:gap-x-[0.8vw] gap-x-[1vw]">
+        <div className="md:w-[2.5vw] md:h-[2.5vw] w-[8.372vw] h-[8.372vw] md:text-[2.1vw] text-[8.372vw] rounded-md flex items-center justify-center">
           {icon}
         </div>
-        <h1 className="text-[1.25vw] font-bold">{name}</h1>
+        <h1 className="md:text-[1.25vw] text-[4.172vw] font-bold">{name}</h1>
       </div>
-      <p className="my-[1vw] text-[0.833vw] text-[rgba(100,100,100,1)]">{detail}</p>
-      <a href="#" className="text-[0.938vw] text-blue-600 flex items-center gap-x-[1vw]">
+      <p className="my-[1vw] md:text-[0.833vw] text-[2.781vw] text-[rgba(100,100,100,1)]">{detail}</p>
+      <a href="#" className="md:text-[0.938vw] text-[2.28vw] text-blue-600 flex items-center justify-center w-fit gap-x-[1vw]">
         <p className="font-bold">Learn More</p>
         <FaChevronRight />
       </a>
@@ -40,32 +40,32 @@ export default function Service3() {
     {
       name: "Interaction Design",
       detail: "Lessons on design that cover the most recent developments.",
-      icon: <MdOutlineScreenshotMonitor className="text-[2.1vw]" />,
+      icon: <MdOutlineScreenshotMonitor />,
     },
     {
       name: "Interaction Design",
       detail: "Lessons on design that cover the most recent developments.",
-      icon: <MdOutlineScreenshotMonitor className="text-[2.1vw]" />,
+      icon: <MdOutlineScreenshotMonitor />,
     },
     {
       name: "Interaction Design",
       detail: "Lessons on design that cover the most recent developments.",
-      icon: <MdOutlineAutoGraph className="text-[2.1vw]" />,
+      icon: <MdOutlineAutoGraph />,
     },
     {
       name: "Interaction Design",
       detail: "Lessons on design that cover the most recent developments.",
-      icon: <MdOutlineAutoGraph className="text-[2.1vw]" />,
+      icon: <MdOutlineAutoGraph />,
     },
     {
       name: "Interaction Design",
       detail: "Lessons on design that cover the most recent developments.",
-      icon: <MdOutlineAutoGraph className="text-[2.1vw]" />,
+      icon: <MdOutlineAutoGraph />,
     },
     {
       name: "Interaction Design",
       detail: "Lessons on design that cover the most recent developments.",
-      icon: <MdOutlineAutoGraph className="text-[2.1vw]" />,
+      icon: <MdOutlineAutoGraph />,
     },
   ];
 
@@ -84,18 +84,19 @@ export default function Service3() {
   };
 
   return (
-    <section className="w-full min-h-[46.667vw] p-8 flex flex-col items-center bg-white text-gray-800 relative">
+    <section className="aspect-[430/1080] md:aspect-[1920/592] w-full min-h-[46.667vw] md:px-[3vw] md:py-[3vw] px-[5vw] flex flex-col items-center bg-white text-gray-800 relative">
       {/* title */}
-      <div className="flex flex-col items-center justify-center">
-        <h1 className="font-bold text-[1.25vw] text-[#4273CE]">Our Services</h1>
-        <p className="font-bold mt-[1vw] w-[40vw] text-[1.875vw] text-[#161C2D] text-center">
+      <div className="flex flex-col items-center justify-center md:my-0 my-[5vw]">
+        <h1 className="font-bold text-[3.567vw] md:text-[1.25vw] text-[#4273CE]">Our Services</h1>
+        <p className="font-bold mt-[1vw] w-full md:w-[40vw] md:text-[1.875vw] text-[5.421vw] text-[#161C2D] text-center">
           Fostering a playful & engaging learning environment
         </p>
       </div>
       {/* title */}
 
       {/* content */}
-      <div className="w-[72.599vw] h-[12.656vw] mt-[3vw]">
+      {/* desktop content */}
+      <div className="w-[72.599vw] h-[12.656vw] mt-[3vw] hidden md:block">
         <Swiper
           ref={swiperRef}
           spaceBetween={10}
@@ -117,24 +118,36 @@ export default function Service3() {
           ))}
         </Swiper>
       </div>
+      {/* desktop content */}
+
+      {/* mobile content */}
+      <div className="flex md:hidden overflow-auto scrollbar-blue w-full h-[146.977vw] p-[5vw]">
+        <div className="mt-[4vw] flex flex-col md:hidden md:py-0">
+          {data.map((d, index) => (
+            <ServiceCard name={d.name} icon={d.icon} detail={d.detail} key={index} />
+          ))}
+        </div>
+      </div>
+      {/* mobile content */}
+
       {/* content */}
 
       {/* Navigation + Pagination Container */}
       <div className="flex items-center justify-center mt-[2vw]">
         {/* Prev Button */}
         <button
-        className="mt-[0.2vw] mx-[0.9vw]"
+        className="mt-[0.2vw] mx-[0.9vw] hidden md:flex"
           onClick={handlePrev}
         >
           <FaChevronLeft className="text-[1vw]" />
         </button>
 
         {/* Custom pagination */}
-        <div className="swiper-pagination-custom text-center"></div>
+        <div className="swiper-pagination-custom text-center hidden md:flex md:items-center"></div>
 
         {/* Next Button */}
         <button
-        className="mt-[0.2vw] mx-[0.9vw]"
+        className="mt-[0.2vw] mx-[0.9vw] hidden md:flex"
           onClick={handleNext}
         >
           <FaChevronRight className="text-[1vw]" />
