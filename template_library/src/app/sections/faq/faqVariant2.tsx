@@ -11,12 +11,12 @@ interface FaqDropdownProps {
 function FaqDropdownCard({ question, answer }: FaqDropdownProps) {
     const [isActive, setIsActive] = useState(false);
     return (
-        <div className="w-[66.667vw] bg-[rgba(245,245,245,1)] p-[1vw] rounded-lg m-[0.8vw] shadow-md" onClick={() => setIsActive(!isActive)}>
+        <div className="md:w-[66.667vw] w-[90.233vw] bg-[rgba(245,245,245,1)] md:p-[1vw] p-[2.4vw] rounded-lg md:m-[0.8vw] m-[2vw] shadow-md" onClick={() => setIsActive(!isActive)}>
             <div className={`font-bold text-[1.042vw] flex items-center justify-between ${isActive ? "mb-[1vw]" : "my-[0.5vw]"}`}>
-                <p className="text-[1.25vw]">{question}</p>
-                {isActive ? <FaMinus className="text-[0.9vw]" /> : <FaChevronDown className="text-[0.9vw] text-blue-700" />}
+                <p className="md:text-[1.25vw] text-[4.5vw]">{question}</p>
+                {isActive ? <FaMinus className="md:text-[0.9vw] text-[3.4vw]" /> : <FaChevronDown className="md:text-[0.9vw] text-[3.4vw] text-blue-700" />}
             </div>
-            <p className={`h-[6.25vw] text-[0.828vw] text-[rgba(116,116,116,1)] ${isActive ? "flex" : "hidden"}`}>
+            <p className={`md:h-[6.25vw] h-[53.953vw] md:text-[0.828vw] text-[4vw] md:mt-0 mt-[3vw] text-[rgba(116,116,116,1)] ${isActive ? "flex" : "hidden"}`}>
                 {answer}
             </p>
         </div>
@@ -53,10 +53,10 @@ export default function Faq2() {
     ]
 
     return (
-        <section className="w-full aspect-[1920/1080] p-8 flex flex-col items-center bg-gray-100 text-gray-800 relative ">
+        <section className="w-full md:aspect-[1920/1080] aspect-[430/1312] p-8 flex flex-col items-center bg-gray-100 text-gray-800 relative ">
             {/* title */}
-            <h1 className="text-[2.915vw] font-bold text-blue-700">Frequently asked questions</h1>
-            <p className="mb-[1vw] text-[rgba(71,85,105,1)] text-[1.042vw] w-[46.875vw] text-center">Et pulvinar nec interdum integer id urna molestie porta nullam. A, donec ornare sed turpis pulvinar purus maecenas quam a. Erat porttitor pharetra sed in mauris elementum sollicitudin.</p>
+            <h1 className="md:text-[2.915vw] text-[9.767vw] md:text-start text-center font-bold text-blue-700">Frequently asked questions</h1>
+            <p className="mb-[1vw] text-[rgba(71,85,105,1)] md:text-[1.042vw] text-[2.74vw] md:w-[46.875vw] w-full text-center">Et pulvinar nec interdum integer id urna molestie porta nullam. A, donec ornare sed turpis pulvinar purus maecenas quam a. Erat porttitor pharetra sed in mauris elementum sollicitudin.</p>
             {/* title */}
             
             {/* content */}
