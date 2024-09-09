@@ -157,9 +157,9 @@ export default function Pricing2() {
           Choose the perfect plan for your business needs
         </p>
         {/* Toggle */}
-        <div className="md:flex justify-end hidden">
-          <div className="flex gap-x-[1vw] justify-center items-center">
-            <p className="text-[0.9vw] font-medium text-gray-900 dark:text-gray-300">
+        <div className="flex justify-end items-end">
+          <div className="md:w-fit w-1/2 md:h-fit h-[6vw] flex gap-x-[1vw] justify-center items-center">
+            <p className="md:text-[0.9vw] text-[2.4vw] font-medium text-gray-900 dark:text-gray-300">
               Monthly
             </p>
             <label className="inline-flex items-center cursor-pointer">
@@ -168,9 +168,9 @@ export default function Pricing2() {
                 className="sr-only peer"
                 onChange={() => setIsMonthly(!isMonthly)}
               />
-              <div className="relative w-[2.864vw] h-[1.563vw] bg-gray-200 rounded-full peer peer-focus:ring-[0.208vw] peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[0.130vw] after:start-[0.10vw] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-[1.302vw] after:w-[1.302vw] after:transition-all dark:border-gray-600 peer-checked:bg-blue-600"></div>
+              <div className="relative md:w-[2.864vw] md:h-[1.563vw] w-[7.65vw] h-[4.3vw] bg-gray-200 rounded-full peer peer-focus:ring-[0.208vw] peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[0.57vw] after:start-[0.40vw] md:after:top-[0.130vw] md:after:start-[0.10vw] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-[3.302vw] after:w-[3.302vw] md:after:h-[1.302vw] md:after:w-[1.302vw] after:transition-all dark:border-gray-600 peer-checked:bg-blue-600"></div>
             </label>
-            <p className="text-[0.9vw] font-medium text-gray-900 dark:text-gray-300">
+            <p className="md:text-[0.9vw] text-[2.4vw] font-medium text-gray-900 dark:text-gray-300">
               Yearly
             </p>
           </div>
