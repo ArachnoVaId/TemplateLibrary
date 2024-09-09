@@ -6,7 +6,7 @@ interface heroprops {
 
 export default function Hero4() {
   return (
-    <section className="w-full md:aspect-[1920/1080] aspect-[430/1080] flex flex-col justify-center items-center bg-white relative">
+    <section className="w-full md:aspect-[1920/1080] aspect-[430/1080] flex flex-col md:justify-center items-center md:pt-0 pt-[12vw] bg-white relative">
       {/* Ornament background */}
       <Image
         src="/image/hero/hero4/circular.png"
