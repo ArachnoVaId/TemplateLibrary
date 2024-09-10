@@ -3,13 +3,13 @@ import { FaArrowRight } from "react-icons/fa";
 
 export default function footer2() {
   return (
-    <section className="w-full min-h-[19.583vw] flex flex-col justify-center items-center bg-white text-gray-800 relative">
+    <section className="w-full md:min-h-[19.583vw] md:aspect-ratio[1920/1080] aspect-ratio[430/883] flex flex-col justify-center items-center bg-white text-gray-800 relative">
       <div
-        className="w-full h-[16.927vw] absolute top-0 p-[3vw] flex justify-center items-center"
+        className="w-full md:h-[16.927vw] h-[188.605vw] absolute top-0 p-[3vw] flex justify-center items-center"
         style={{ background: "#F1F5F9" }}
       >
-        <div className="w-[73.958vw] h-[8.594vw] flex flex-row items-start justify-between">
-          <div className="w-[20.99vw] h-[7.813vw]">
+        <div className="md:w-[73.958vw] md:h-[8.594vw] w-[81.395vw] h-[160.698vw] flex flex-col md:flex-row items-start justify-between">
+          <div className="md:w-[20.99vw] md:h-[7.813vw] w-full h-[31.163vw]">
             <div className="w-[11.51vw] h-[2.813vw] flex flex-row items-center justify-between">
               <Image
                 src="/image/footer/arachnova.png"
