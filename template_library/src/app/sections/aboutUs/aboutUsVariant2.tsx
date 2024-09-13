@@ -16,7 +16,7 @@ export default function AboutUs2() {
             tincidunt id. Sed scelerisque in eu auctor. Lectus enim id et eget
             risus est ipsum morbi sit. Cursus tortor in et at viverra fermentum.
           </p>
-          <p className="text-[4.502vw] md:text-[1.042vw] text-justify">
+          <p className="text-[4.502vw] md:text-[1.042vw] text-justify mt-[3vw] md:mt-[0.5vw]">
             Orci tellus fames pharetra elit fermentum magna morbi donec.
             Pulvinar quis blandit sollicitudin ut lectus cursus. Ipsum luctus
             duis vitae venenatis. Amet.
