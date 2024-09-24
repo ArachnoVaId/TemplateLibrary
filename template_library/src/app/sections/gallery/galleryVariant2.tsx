@@ -34,7 +34,8 @@ export default function Gallery2() {
         </div>
       </div>
       {/* content desktop */}
-      {/* content desktop */}
+
+      {/* content mobile */}
       <div className="p-[8vw] flex md:hidden">
         <div className="grid grid-cols-2 gap-[2vw] w-full">
           <Image src="/image/gallery/gallery2/gallery1.png" alt="gallery" width={10000} height={10000} className="col-span-2" />
@@ -51,7 +52,7 @@ export default function Gallery2() {
           <Image src="/image/gallery/gallery2/gallery8.png" alt="gallery" width={10000} height={10000} />
         </div>
       </div>
-      {/* content desktop */}
+      {/* content mobile */}
 
     </section>
   );
