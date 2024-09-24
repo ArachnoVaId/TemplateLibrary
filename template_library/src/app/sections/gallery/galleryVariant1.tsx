@@ -12,7 +12,7 @@ export default function Gallery1() {
         <p className="md:text-[1.042vw] text-[rgba(97,97,97,1)] text-[3.833vw]">
           Share your setup with
         </p>
-        <h1 className="font-bold md:text-[2.083vw] 7.663vw">#GalleryHighlight</h1>
+        <h1 className="font-bold md:text-[2.083vw] text-[7.663vw]">#GalleryHighlight</h1>
       </div>
       {/* title */}
 
