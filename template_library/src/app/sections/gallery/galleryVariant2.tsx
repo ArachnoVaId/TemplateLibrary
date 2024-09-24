@@ -9,7 +9,7 @@ export default function Gallery2() {
 
       {/* title */}
       <div className="mx-[4.166vw] mb-[4.166vw] text-center flex flex-col">
-        <p className="md:text-[1.042vw] text-[rgba(97,97,97,1)] text-[3.833vw]">
+        <p className="md:text-[1.042vw] text-[rgba(97,97,97,1)] text-[3.833vw] font-poppins">
           Share your setup with
         </p>
         <h1 className="font-bold md:text-[2.083vw] text-[7.663vw]">#GalleryHighlight</h1>
