@@ -47,11 +47,11 @@ function CardTitle({ feature }: CardTitleProps) {
     const featureEntries = Object.entries(feature);
 
     return (
-        <div className="w-[18.75vw]">
+        <div className="md:w-[18.75vw] w-[30.698vw]">
             {/* content head */}
-            <div className="h-[14.21875vw] p-[1vw] flex flex-col items-start justify-center">
-                <p className="font-bold text-[1.25vw]">Compare plans</p>
-                <p className="text-[rgba(133,139,160,1)] text-[0.78125vw]">
+            <div className="md:h-[14.21875vw] h-[57.674vw] p-[1vw] flex flex-col items-start md:justify-center justify-evenly md:text-start text-center">
+                <p className="font-bold md:text-[1.25vw] text-[4.651vw]">Compare plans</p>
+                <p className="text-[rgba(133,139,160,1)] md:text-[0.78125vw] text-[2.791vw]">
                     Choose your workspace plan according to your organisational plan
                 </p>
             </div>
@@ -61,10 +61,10 @@ function CardTitle({ feature }: CardTitleProps) {
             <div className="flex flex-col justify-center items-center">
                 {featureEntries.map(([key, value]) => (
                     <div
-                        className="h-[4.166vw] border border-b-black w-full flex flex-col justify-center items-center"
+                        className="md:h-[4.166vw] h-[28.837vw] border border-b-black w-full flex flex-col justify-center items-center"
                         key={key}
                     >
-                        <p className="font-bold text-[0.9375vw]">{value}</p>
+                        <p className="font-bold md:text-[0.9375vw] text-[4.186vw] md:text-start text-center">{value}</p>
                     </div>
                 ))}
             </div>
@@ -75,22 +75,22 @@ function CardTitle({ feature }: CardTitleProps) {
 
 function CardPricing({ type, desc, fee, pages, usersPerPage, features }: CardContent) {
     return (
-        <div className="text-center w-[18.75vw]">
+        <div className="text-center md:w-[18.75vw] w-[30.698vw]">
             {/* content head */}
-            <div className="h-[14.21875vw] p-[1vw] flex flex-col justify-center items-center">
-                <p className="font-bold text-[1.25vw]">{type}</p>
+            <div className="md:h-[14.21875vw] h-[57.674vw] p-[1vw] flex flex-col justify-center items-center">
+                <p className="font-bold md:text-[1.25vw] text-[3.488vw]">{type}</p>
                 {fee === 0 ? (
-                    <p className="font-bold text-[rgba(66,115,206,1)] text-[2.083vw]">Free</p>
+                    <p className="font-bold text-[rgba(66,115,206,1)] md:text-[2.083vw] text-[3.488vw]">Free</p>
                 ) : (
-                    <p className="font-bold text-[rgba(66,115,206,1)] text-[0.89vw]">
+                    <p className="font-bold text-[rgba(66,115,206,1)] md:text-[0.89vw] text-[2.3vw]">
                         Rp{" "}
-                        <span className="font-bold text-[rgba(66,115,206,1)] text-[2.083vw]">
+                        <span className="font-bold text-[rgba(66,115,206,1)] md:text-[2.083vw] text-[3.488vw]">
                             {fee.toLocaleString()}
                         </span>
                     </p>
                 )}
-                <p className="text-[0.729vw]">{desc}</p>
-                <button className="bg-[rgba(66,115,206,1)] text-white py-[0.5vw] px-[1vw] rounded-md mt-[1vw] w-[15.83vw] text-[0.833vw]">
+                <p className="md:text-[0.729vw] text-[2.57vw]">{desc}</p>
+                <button className="bg-[rgba(66,115,206,1)] text-white py-[0.5vw] px-[1vw] md:w-[15.83vw] md:h-fit w-[22.326vw] h-[13.333vw] rounded-md md:mt-[1vw] mt-[3vw] md:text-[0.833vw] text-[2.5vw]">
                     Choose This Plan
                 </button>
             </div>
@@ -98,30 +98,30 @@ function CardPricing({ type, desc, fee, pages, usersPerPage, features }: CardCon
 
             {/* pricing content */}
             <div className="flex flex-col justify-center items-center">
-                <div className="h-[4.166vw] border border-b-black w-full flex flex-col justify-center items-center">
-                    <p className="font-bold text-[0.8375vw]">
+                <div className="md:h-[4.166vw] h-[28.837vw] border border-b-black w-full flex flex-col justify-center items-center">
+                    <p className="font-bold md:text-[0.8375vw] text-[3.256vw]">
                         {pages.numPages === -1 ? "Unlimited" : pages.numPages.toLocaleString()} Pages
                     </p>
-                    <p className="text-gray-600 text-[0.9375vw]">{pages.desc}</p>
+                    <p className="text-gray-600 md:text-[0.9375vw] text-[1.8vw]">{pages.desc}</p>
                 </div>
-                <div className="h-[4.166vw] border border-b-black w-full flex flex-col justify-center items-center">
-                    <p className="font-bold text-[0.9375vw]">
+                <div className="md:h-[4.166vw] h-[28.837vw] border border-b-black w-full flex flex-col justify-center items-center">
+                    <p className="font-bold md:text-[0.9375vw] text-[3.256vw]">
                         {usersPerPage.numUserPages === -1
                             ? "Unlimited"
                             : usersPerPage.numUserPages.toLocaleString()}{" "}
                         Pages
                     </p>
-                    <p className="text-gray-600 text-[0.9375vw]">{usersPerPage.userDesc}</p>
+                    <p className="text-gray-600 md:text-[0.9375vw] text-[1.8vw]">{usersPerPage.userDesc}</p>
                 </div>
                 {Object.keys(features).map((featureKey) => (
                     <div
-                        className="h-[4.166vw] border border-b-black w-full flex justify-center items-center"
+                        className="md:h-[4.166vw] h-[28.837vw] border border-b-black w-full flex justify-center items-center"
                         key={featureKey}
                     >
                         {(features[featureKey as keyof typeof features]) ? (
-                            <CiCircleCheck className="text-green-600 text-[2vw]" />
+                            <CiCircleCheck className="text-green-600 md:text-[2vw] text-[6vw]" />
                         ) : (
-                            <CiCircleRemove className="text-red-600 text-[2vw]" />
+                            <CiCircleRemove className="text-red-600 md:text-[2vw] text-[6vw]" />
                         )}
                     </div>
                 ))}
@@ -228,30 +228,32 @@ export default function Pricing1() {
     };
 
     return (
-        <div className="w-full py-[2vw]">
+        <div className="w-full py-[2vw] aspect-[430/1284] md:aspect-[1920/1518]">
             {/* title */}
             <div className="text-center">
-                <p className="text-[1.25vw] font-bold text-[rgba(66,115,206,1)]">PRICING</p>
-                <p className="font-bold text-black text-[1.875vw]">
+                <p className="md:text-[1.25vw] text-[5.581vw] font-bold text-[rgba(66,115,206,1)]">PRICING</p>
+                <p className="font-bold text-black md:text-[1.875vw] text-[8.372vw] md:px-0 px-[5vw]">
                     We provide great and affordable pricing plans
                 </p>
             </div>
             {/* title */}
 
             {/* content */}
-            <div className="flex justify-center mt-[2vw]">
-                <CardTitle feature={featureData} />
-                {plans.map((plan, index) => (
-                    <CardPricing
-                        key={index}
-                        type={plan.type}
-                        desc={plan.desc}
-                        fee={plan.fee}
-                        pages={plan.pages}
-                        usersPerPage={plan.usersPerPage}
-                        features={plan.features}
-                    />
-                ))}
+            <div className="overflow-auto scroll-hide">
+                <div className="flex justify-center mt-[2vw] ml-[20vw] md:ml-0">
+                    <CardTitle feature={featureData} />
+                    {plans.map((plan, index) => (
+                        <CardPricing
+                            key={index}
+                            type={plan.type}
+                            desc={plan.desc}
+                            fee={plan.fee}
+                            pages={plan.pages}
+                            usersPerPage={plan.usersPerPage}
+                            features={plan.features}
+                        />
+                    ))}
+                </div>
             </div>
             {/* content */}
         </div>

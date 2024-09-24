@@ -53,7 +53,7 @@ export default function Service5() {
     }
   };
   return (
-    <section className="w-full md:aspect-[1920/1080] aspect-[430/1080] bg-[rgba(246,248,247,1)] py-[3.125vw] flex flex-col items-center">
+    <section className="w-full md:aspect-[1920/1080] aspect-[430/879] bg-[rgba(246,248,247,1)] md:py-[3.125vw] py-0 flex flex-col items-center justify-center">
       {/* title */}
       <div className="mx-[4.166vw] text-center flex flex-col gap-y-[1vw]">
         <h1 className="font-bold md:text-[2.917vw] text-[3vw] gradient-text">Our Products</h1>
