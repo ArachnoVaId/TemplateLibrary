@@ -9,15 +9,15 @@ export default function Gallery2() {
 
       {/* title */}
       <div className="mx-[4.166vw] mb-[4.166vw] text-center flex flex-col">
-        <p className="text-[1.042vw] text-[rgba(97,97,97,1)] w-">
+        <p className="md:text-[1.042vw] text-[rgba(97,97,97,1)] text-[3.833vw]">
           Share your setup with
         </p>
-        <h1 className="font-bold text-[2.083vw]">#GalleryHighlight</h1>
+        <h1 className="font-bold md:text-[2.083vw] text-[7.663vw]">#GalleryHighlight</h1>
       </div>
       {/* title */}
 
-      {/* content */}
-      <div className="w-[66.094vw]">
+      {/* content desktop */}
+      <div className="w-[66.094vw] hidden md:flex">
         <div className="grid grid-cols-2 gap-[1vw] w-full">
           <div className="columns-2 [&>img:not(:first-child)]:mt-[1vw] gap-[0.5vw]">
             <Image src="/image/gallery/gallery2/gallery1.png" alt="gallery" width={1000} height={1000} />
@@ -33,7 +33,27 @@ export default function Gallery2() {
           </div>
         </div>
       </div>
-      {/* content */}
+      {/* content desktop */}
+
+      {/* content mobile */}
+      <div className="p-[8vw] flex md:hidden">
+        <div className="grid grid-cols-2 gap-[2vw] w-full">
+          <Image src="/image/gallery/gallery2/gallery1.png" alt="gallery" width={10000} height={10000} className="col-span-2" />
+          <Image src="/image/gallery/gallery2/gallery2.png" alt="gallery" width={10000} height={10000} className="my-auto" />
+          
+          <Image src="/image/gallery/gallery2/gallery3.png" alt="gallery" width={10000} height={10000} />
+          <Image src="/image/gallery/gallery2/gallery4.png" alt="gallery" width={10000} height={10000} className="" />
+          
+          <Image src="/image/gallery/gallery2/gallery5.png" alt="gallery" width={10000} height={10000} className="" />
+          
+          <Image src="/image/gallery/gallery2/gallery6.png" alt="gallery" width={10000} height={10000} className="col-span-2" />
+          <Image src="/image/gallery/gallery2/gallery7.png" alt="gallery" width={10000} height={10000} className="my-auto" />
+          
+          <Image src="/image/gallery/gallery2/gallery8.png" alt="gallery" width={10000} height={10000} />
+        </div>
+      </div>
+      {/* content mobile */}
+
     </section>
   );
 }
