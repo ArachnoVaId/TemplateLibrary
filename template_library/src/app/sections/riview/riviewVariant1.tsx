@@ -55,7 +55,7 @@ const data: iCard[] = [
 
 function Card({ desc, image_src, name, occupation }: iCard) {
   return (
-    <div className="w-[71.86vw] md:w-[21.4583vw] md:h-[16.229vw] h-[64.186vw] font-roboto md:text-[0.9375vw] text-[3.721vw] shadow-[0px_10px_15px_-3px_rgba(0,0,0,0.1)] md:p-[1.666vw] p-[5vw] bg-white rounded-md flex flex-col justify-between">
+    <div className="w-[73.86vw] md:w-[21.4583vw] md:h-[16.229vw] h-[64.186vw] font-roboto md:text-[0.9375vw] text-[3.521vw] shadow-[0px_10px_15px_-3px_rgba(0,0,0,0.1)] md:p-[1.666vw] p-[5vw] bg-white rounded-md flex flex-col justify-between">
       <p className="mb-[1vw]">{desc}</p>
       <div className="flex gap-x-[0.5vw] items-center">
         <Image
@@ -120,7 +120,7 @@ export default function Riview1() {
         <Swiper
           ref={swiperRef}
           spaceBetween={50}
-          slidesPerView={1}
+          slidesPerView={1.4}
           modules={[Navigation]}
           navigation={{
             prevEl: '.swiper-button-prev',
