@@ -51,11 +51,11 @@ export default function teams3() {
           and foster a culture that empowers you to do you best work.
         </p>
       </div>
-      <div className="md:w-[78.698vw] md:h-[33.75vw] w-[78.547vw] h-[602.791vw] flex flex-col justify-between mt-[2vw]">
+      <div className="md:w-[78.698vw] md:h-[33.75vw] w-[78.547vw] h-[212.791vw] overflow-auto scrollbar-blue flex flex-col justify-between mt-[2vw]">
         <div className="flex flex-col md:flex-row items-center justify-between">
           {sources1.map((client, index) => (
             <div
-              className="md:w-[17.578vw] md:h-[15.208vw] w-full h-[67.907vw] flex flex-col items-center bg-[#F9FAFB] p-[2vw] md:p-[1.25vw] md:mt-0 mt-[5vw] relative"
+              className="md:w-[17.578vw] md:h-[15.208vw] w-full h-[67.907vw] flex flex-col items-center bg-[#F9FAFB] p-[2vw] md:p-[1.25vw] md:mb-0 mb-[5vw] relative"
               key={index}
             >
               <Image
