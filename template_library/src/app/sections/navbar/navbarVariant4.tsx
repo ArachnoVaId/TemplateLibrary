@@ -33,7 +33,7 @@ export default function Navbar4() {
   }, [lastScrollTop]);
 
   return (
-    <div className={`w-full bg-white py-[1.219vw] px-[3.121vw] flex flex-col justify-between items-center top-0 ${isNavbarHidden ? "-translate-y-full" : "translate-y-0"} fixed z-[99] transition-transform duration-300`}>
+    <div className={`w-full bg-white md:py-[1.219vw] py-[3vw] px-[3.121vw] flex flex-col justify-between items-center top-0 ${isNavbarHidden ? "-translate-y-full" : "translate-y-0"} fixed z-[99] transition-transform duration-300`}>
       <div className="w-full flex justify-between items-center">
         <div className="flex gap-x-[1.2vw] items-center">
           <div className="flex gap-x-[0.625vw] text-[1.45vw] font-bold mr-[1.2vw]">
@@ -64,7 +64,7 @@ export default function Navbar4() {
           <GiHamburgerMenu className="text-blue-500 text-[5vw]" />
         </button>
       </div>
-      <div className={`w-full px-[3.121vw] flex md:hidden flex-col space-y-[1vw] py-[4vw] items-center justify-center bg-white/60 transition-all duration-500 ease-in-out ${isExpand ? "max-h-[500px] opacity-100" : "max-h-0 opacity-0 overflow-hidden"}`}>
+      <div className={`w-full px-[3.121vw] flex md:hidden flex-col space-y-[1vw] items-center justify-center bg-white/60 transition-all duration-500 ease-in-out ${isExpand ? "max-h-[500px] opacity-100 py-[4vw]" : "max-h-0 opacity-0 overflow-hidden"}`}>
         <a href="" className="w-full flex justify-center md:hidden font-semibold text-[2.6vw]">Home</a>
         <a href="" className="w-full flex justify-center md:hidden font-semibold text-[2.6vw]">About Us</a>
         <a href="" className="w-full flex justify-center md:hidden font-semibold text-[2.6vw]">Pricing</a>
